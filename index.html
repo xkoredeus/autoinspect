@@ -12,7 +12,139 @@
 	<![endif]-->
 </head>
 <body>
-
+	<header class="header">
+		<div class="header__container container">
+			<div class="header__logo">
+				<a href="#"><img src="img/main-logo.png" alt="main-logo.png"></a>
+			</div>	
+			<div class="header__info">
+				<div class="header__info_top">
+					<a href="mailto:m1@samtu.ru" class="header__info-item header__info-item_mail">
+						m1@samtu.ru
+					</a>
+					<a href="tel:78007077025" class="header__info-item header__info-item_tel">
+						8 (800) 707-70-25
+					</a>
+					<div class="header__info-item header__info-item_time">
+						Пн-пт, 09:00-18:00
+					</div>
+					<a href="#popup_call" class="btn header__info-btn" data-fancybox>Оставить заявку</a>
+				</div>
+				<ul class="header__nav">
+					<li><a href="#" class="header__nav-link">Виды экспертиз</a></li>
+					<li><a href="#" class="header__nav-link active">Этапы работы</a></li>
+					<li><a href="#" class="header__nav-link">Почему выбирают нас</a></li>
+					<li><a href="#" class="header__nav-link">О компании</a></li>
+					<li><a href="#" class="header__nav-link">Отзывы</a></li>
+					<li><a href="#" class="header__nav-link">Контакты</a></li>
+				</ul>
+			</div>		
+		</div>
+	</header>
+	<section class="section__offer">
+		<div class="offer__container container">
+			<img src="img/offer__img.png" alt="offer__img.png" class="offer__img">
+			<div class="offer__cnt">
+				<div class="offer__ttl-wrp">
+					<h2 class="offer__ttl skew">Независимая автоэкспертиза ДТП в Москве и МО</h2>
+					<div class="offer__subttl skew">
+						<span class="offer__subttl-item">ОТ 1 дня</span>
+						<span class="offer__subttl-item">ОТ 2600 руб</span>
+						<div class="offer__subttl-descr">По готовому акту осмотра</div>
+					</div>
+				</div>
+				<div class="offer__form-wrp skew shd">
+					<form action="[[~[[*id]]]]" method="post" class="offer__form noskew">
+						<div class="offer__form-ttl">Оформить заявку на бесплатную консультацию</div>
+						<div class="input__wrp input__wrp_tel">
+							<input type="tel" class="input__tel" name="offer__tel" placeholder="Ваш телефон">
+						</div>
+						<input type="submit" class="btn input__submit" name="offer__submit" value="Записаться сейчас">
+					</form>
+				</div>
+			</div>
+			<div class="offer__name skew">
+				<b>Карпов Дмитрий Вячеславович</b> эксперт-техник, судебный эксперт
+			</div>
+		</div>
+	</section>
+	<section class="events__section">
+		<div class="events__container container">
+			<div class="events__ttl-wrp skew">
+				<h3 class="events__ttl">В каких случаях требуется независимая автоэкспертиза</h3>
+			</div>
+			<div class="events__cnt skew">
+				<div class="events__item shd">
+					<span class="noskew">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos ducimus dolorem facilis laborum numquam a.
+					</span>
+				</div>
+				<div class="events__item shd">
+					<span class="noskew">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos ducimus dolorem facilis laborum numquam a.
+					</span>
+				</div>
+				<div class="events__item shd">
+					<span class="noskew">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos ducimus dolorem facilis laborum numquam a.
+					</span>
+				</div>
+				<div class="events__item shd">
+					<span class="noskew">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos ducimus dolorem facilis laborum numquam a.
+					</span>
+				</div>
+				<div class="events__item shd">
+					<span class="noskew">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos ducimus dolorem facilis laborum numquam a.
+					</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="views__section">
+		<div class="views__section-inner">
+			<div class="container">
+				<h3 class="section__ttl">Все виды автоэкспертиз в Москве и МО</h3>
+				<div class="views__wrp">
+					<div class="views__tabs">
+						<div class="views__tabs-item">
+							<div class="views__tabs-item-img"></div>
+							<div class="views__tabs-item-descr">Независимая автоэкспертиза (оценка ущерба после ДТП)</div>
+						</div>
+						<div class="views__tabs-item">
+							<div class="views__tabs-item-img"></div>
+							<div class="views__tabs-item-descr">Независимая автоэкспертиза (оценка ущерба после ДТП)</div>
+						</div>
+						<div class="views__tabs-item">
+							<div class="views__tabs-item-img"></div>
+							<div class="views__tabs-item-descr">Независимая автоэкспертиза (оценка ущерба после ДТП)</div>
+						</div>
+						<div class="views__tabs-item">
+							<div class="views__tabs-item-img"></div>
+							<div class="views__tabs-item-descr">Независимая автоэкспертиза (оценка ущерба после ДТП)</div>
+						</div>
+					</div>
+					<div class="views__tabs-cnt">
+						<div class="views__tabs-cnt-item">
+							<div class="views__tabs-cnt-ttl">Экспертиза обстоятельств ДТП</div>
+							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
+							<div class="views__tabs-cnt-feed">
+								<div class="views__tabs-cnt-feed-ttl">Заказать услугу от 2 500 руб</div>
+								<form action="[[~[[*id]]]]" method="post" class="views__tabs-cnt-form">
+									<div class="input__wrp input__wrp_tel">
+										<input type="tel" class="input__tel" name="offer__tel" placeholder="Ваш телефон">
+									</div>
+									<input type="submit" class="btn input__submit" name="offer__submit" value="Записаться сейчас">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
 	<script src="js/main.js"></script>
 </body>
 </html>
