@@ -6,6 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Auto - Inspection</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<!--[if lte IE 8]>
 		<script src="js/html5.js"></script>
@@ -105,46 +107,748 @@
 	<section class="views__section">
 		<div class="views__section-inner">
 			<div class="container">
-				<h3 class="section__ttl">Все виды автоэкспертиз в Москве и МО</h3>
+				<h3 class="section__ttl">Все виды автоэкспертиз в Москве и МО НАВЕДЕНИЕ НАВЕДЕНИЕ НАВЕДЕНИЕ</h3>
 				<div class="views__wrp">
-					<div class="views__tabs">
-						<div class="views__tabs-item">
+					<div class="views__tabs views__tabs_left">
+						<div class="views__tabs-item active">
 							<div class="views__tabs-item-img"></div>
 							<div class="views__tabs-item-descr">Независимая автоэкспертиза (оценка ущерба после ДТП)</div>
 						</div>
 						<div class="views__tabs-item">
 							<div class="views__tabs-item-img"></div>
-							<div class="views__tabs-item-descr">Независимая автоэкспертиза (оценка ущерба после ДТП)</div>
+							<div class="views__tabs-item-descr">Транспортная трасологическая экспертиза</div>
 						</div>
 						<div class="views__tabs-item">
 							<div class="views__tabs-item-img"></div>
-							<div class="views__tabs-item-descr">Независимая автоэкспертиза (оценка ущерба после ДТП)</div>
+							<div class="views__tabs-item-descr">Экспертиза обстоятельств ДТП</div>
 						</div>
 						<div class="views__tabs-item">
 							<div class="views__tabs-item-img"></div>
-							<div class="views__tabs-item-descr">Независимая автоэкспертиза (оценка ущерба после ДТП)</div>
+							<div class="views__tabs-item-descr">Расчет утраты товарной стоимости</div>
 						</div>
 					</div>
 					<div class="views__tabs-cnt">
-						<div class="views__tabs-cnt-item">
+						<!-- Item 1 -->
+						<div class="views__tabs-cnt-item active">
 							<div class="views__tabs-cnt-ttl">Экспертиза обстоятельств ДТП</div>
 							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
+							<div class="views__tabs-cnt-descr">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque?
+							</div>
 							<div class="views__tabs-cnt-feed">
 								<div class="views__tabs-cnt-feed-ttl">Заказать услугу от 2 500 руб</div>
 								<form action="[[~[[*id]]]]" method="post" class="views__tabs-cnt-form">
 									<div class="input__wrp input__wrp_tel">
 										<input type="tel" class="input__tel" name="offer__tel" placeholder="Ваш телефон">
 									</div>
-									<input type="submit" class="btn input__submit" name="offer__submit" value="Записаться сейчас">
+									<input type="submit" class="btn input__submit" name="view__tabs-sumbit" value="Заказать">
 								</form>
+							</div>
+						</div>
+						<!-- / Item 1 -->
+						<!-- Item 2 -->
+						<div class="views__tabs-cnt-item">
+							<div class="views__tabs-cnt-ttl">Транспортная трасологическая экспертиза</div>
+							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
+							<div class="views__tabs-cnt-descr">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque?
+							</div>
+							<div class="views__tabs-cnt-feed">
+								<div class="views__tabs-cnt-feed-ttl">Заказать услугу от 2 500 руб</div>
+								<form action="[[~[[*id]]]]" method="post" class="views__tabs-cnt-form">
+									<div class="input__wrp input__wrp_tel">
+										<input type="tel" class="input__tel" name="offer__tel" placeholder="Ваш телефон">
+									</div>
+									<input type="submit" class="btn input__submit" name="view__tabs-sumbit" value="Заказать">
+								</form>
+							</div>
+						</div>
+						<!-- / Item 2 -->
+						<!-- Item 3 -->
+						<div class="views__tabs-cnt-item">
+							<div class="views__tabs-cnt-ttl">Экспертиза обстоятельств ДТП</div>
+							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
+							<div class="views__tabs-cnt-descr">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque?
+							</div>
+							<div class="views__tabs-cnt-feed">
+								<div class="views__tabs-cnt-feed-ttl">Заказать услугу от 2 500 руб</div>
+								<form action="[[~[[*id]]]]" method="post" class="views__tabs-cnt-form">
+									<div class="input__wrp input__wrp_tel">
+										<input type="tel" class="input__tel" name="offer__tel" placeholder="Ваш телефон">
+									</div>
+									<input type="submit" class="btn input__submit" name="view__tabs-sumbit" value="Заказать">
+								</form>
+							</div>
+						</div>
+						<!-- / Item 3 -->
+						<!-- Item 4 -->
+						<div class="views__tabs-cnt-item">
+							<div class="views__tabs-cnt-ttl">Расчет утраты товарной стоимости</div>
+							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
+							<div class="views__tabs-cnt-descr">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque?
+							</div>
+							<div class="views__tabs-cnt-feed">
+								<div class="views__tabs-cnt-feed-ttl">Заказать услугу от 2 500 руб</div>
+								<form action="[[~[[*id]]]]" method="post" class="views__tabs-cnt-form">
+									<div class="input__wrp input__wrp_tel">
+										<input type="tel" class="input__tel" name="offer__tel" placeholder="Ваш телефон">
+									</div>
+									<input type="submit" class="btn input__submit" name="view__tabs-sumbit" value="Заказать">
+								</form>
+							</div>
+						</div>
+						<!-- / Item 4 -->
+						<!-- Item 5 -->
+						<div class="views__tabs-cnt-item">
+							<div class="views__tabs-cnt-ttl">Оценка рыночной стоимости автотранспорта</div>
+							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
+							<div class="views__tabs-cnt-descr">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque?
+							</div>
+							<div class="views__tabs-cnt-feed">
+								<div class="views__tabs-cnt-feed-ttl">Заказать услугу от 2 500 руб</div>
+								<form action="[[~[[*id]]]]" method="post" class="views__tabs-cnt-form">
+									<div class="input__wrp input__wrp_tel">
+										<input type="tel" class="input__tel" name="offer__tel" placeholder="Ваш телефон">
+									</div>
+									<input type="submit" class="btn input__submit" name="view__tabs-sumbit" value="Заказать">
+								</form>
+							</div>
+						</div>
+						<!-- / Item 5 -->
+						<!-- Item 6 -->
+						<div class="views__tabs-cnt-item">
+							<div class="views__tabs-cnt-ttl">Судебная экспертиза</div>
+							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
+							<div class="views__tabs-cnt-descr">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque?
+							</div>
+							<div class="views__tabs-cnt-feed">
+								<div class="views__tabs-cnt-feed-ttl">Заказать услугу от 2 500 руб</div>
+								<form action="[[~[[*id]]]]" method="post" class="views__tabs-cnt-form">
+									<div class="input__wrp input__wrp_tel">
+										<input type="tel" class="input__tel" name="offer__tel" placeholder="Ваш телефон">
+									</div>
+									<input type="submit" class="btn input__submit" name="view__tabs-sumbit" value="Заказать">
+								</form>
+							</div>
+						</div>
+						<!-- / Item 6 -->
+						<!-- Item 7 -->
+						<div class="views__tabs-cnt-item">
+							<div class="views__tabs-cnt-ttl">Судебная экспертиза</div>
+							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
+							<div class="views__tabs-cnt-descr">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque?
+							</div>
+							<div class="views__tabs-cnt-feed">
+								<div class="views__tabs-cnt-feed-ttl">Заказать услугу от 2 500 руб</div>
+								<form action="[[~[[*id]]]]" method="post" class="views__tabs-cnt-form">
+									<div class="input__wrp input__wrp_tel">
+										<input type="tel" class="input__tel" name="offer__tel" placeholder="Ваш телефон">
+									</div>
+									<input type="submit" class="btn input__submit" name="view__tabs-sumbit" value="Заказать">
+								</form>
+							</div>
+						</div>
+						<!-- / Item 7 -->
+						<!-- Item 8 -->
+						<div class="views__tabs-cnt-item">
+							<div class="views__tabs-cnt-ttl">Экспертиза выявленных дефектов в период гарантийного срока эксплуатации</div>
+							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
+							<div class="views__tabs-cnt-descr">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque?
+							</div>
+							<div class="views__tabs-cnt-feed">
+								<div class="views__tabs-cnt-feed-ttl">Заказать услугу от 2 500 руб</div>
+								<form action="[[~[[*id]]]]" method="post" class="views__tabs-cnt-form">
+									<div class="input__wrp input__wrp_tel">
+										<input type="tel" class="input__tel" name="offer__tel" placeholder="Ваш телефон">
+									</div>
+									<input type="submit" class="btn input__submit" name="view__tabs-sumbit" value="Заказать">
+								</form>
+							</div>
+						</div>
+						<!-- / Item 8 -->
+					</div>
+					<div class="views__tabs views__tabs_right">
+						<div class="views__tabs-item">
+							<div class="views__tabs-item-img"></div>
+							<div class="views__tabs-item-descr">Оценка рыночной стоимости автотранспорта</div>
+						</div>
+						<div class="views__tabs-item">
+							<div class="views__tabs-item-img"></div>
+							<div class="views__tabs-item-descr">Судебная экспертиза</div>
+						</div>
+						<div class="views__tabs-item">
+							<div class="views__tabs-item-img"></div>
+							<div class="views__tabs-item-descr">Экспертиза качества проведенного ремонта</div>
+						</div>
+						<div class="views__tabs-item">
+							<div class="views__tabs-item-img"></div>
+							<div class="views__tabs-item-descr">Экспертиза выявленных дефектов в период гарантийного срока эксплуатации</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="stages">
+		<div class="stages__inner">
+			<div class="stages__cnt-wrp">
+				<div class="stages__container container">
+					<h3 class="section__ttl">Начните работу вместе с нами СТРЕЛКА  СТРЕЛКА СТРЕЛКА</h3>
+					<div class="stages__tabs tabs">
+						<ul class="tabs__list">
+							<li><span>Что вы получите?</span></li>
+							<li class="active"><span>С чего начать?</span></li>
+						</ul>
+						<div class="tabs__container">
+							<div class="tab-content__item stages-tabs-content__item">
+								<div class="stages__subttl">Оценка ущерба в 3 этапа</div>
+								<div class="stages__cnt">
+									<div class="stages__item">
+										<span class="stages__item-ttl">Позвоните нам за консультацией и запишитесь на осмотр</span>
+										<span class="stages__item-num">1</span>
+									</div>
+									<div class="stages__item">
+										<span class="stages__item-ttl">В согласованное с Вами время приедет эксперт</span>
+										<span class="stages__item-num">2</span>
+									</div>
+									<div class="stages__item">
+										<span class="stages__item-ttl">Вы получаете готовый пакет документов для обращения к ответчику с доставкой</span>
+										<span class="stages__item-num">3</span>
+									</div>
+								</div>
+								<div class="stages__descr">
+									<span>Срок предоставления экспертного заключения с полным комплектом документов - от 1 дня</span>
+									<span>Все необходимое для досудебного и судебного урегулирования правовых споров</span>
+								</div>
+							</div>
+							<div class="tab-content__item stages-tabs-content__item">
+								<div class="stages__subttl">Что вы получите Оценка ущерба в 3 этапа</div>
+								<div class="stages__cnt">
+									<div class="stages__item">
+										<span class="stages__item-ttl">Позвоните нам за консультацией и запишитесь на осмотр</span>
+										<span class="stages__item-num">1</span>
+									</div>
+									<div class="stages__item">
+										<span class="stages__item-ttl">В согласованное с Вами время приедет эксперт</span>
+										<span class="stages__item-num">2</span>
+									</div>
+									<div class="stages__item">
+										<span class="stages__item-ttl">Вы получаете готовый пакет документов для обращения к ответчику с доставкой</span>
+										<span class="stages__item-num">3</span>
+									</div>
+								</div>
+								<div class="stages__descr">
+									<span>Срок предоставления экспертного заключения с полным комплектом документов - от 1 дня</span>
+									<span>Все необходимое для досудебного и судебного урегулирования правовых споров</span>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
 	</section>
+	<section class="docs">
+		<div class="docs__inner">
+			<div class="docs__container container">
+				<h3 class="section__ttl">Какие документы от вас нужны</h3>
+				<div class="docs__cnt fr">
+					<div class="docs__item-wrp skew fi-3">
+						<div class="docs__item">
+							<div class="docs__item-img" style="background-image: url(img/docs__img_1.png)"></div>
+							<div class="docs__item-ttl">Паспорт</div>
+							<div class="docs__item-descr">
+								заказчика оценки. Нужен перая страница и страница с регистрацией
+							</div>
+						</div>
+					</div>
+					<div class="docs__item-wrp skew fi-3">
+						<div class="docs__item">
+							<div class="docs__item-img" style="background-image: url(img/docs__img_2.png)"></div>
+							<div class="docs__item-ttl">Документы на атвомобиль</div>
+							<div class="docs__item-descr">
+								- Свидетельство о регистрации ТС и/или Паспорт транспортного средства
+							</div>
+						</div>
+					</div>
+					<div class="docs__item-wrp skew fi-3">
+						<div class="docs__item">
+							<div class="docs__item-img" style="background-image: url(img/docs__img_3.png)"></div>
+							<div class="docs__item-ttl">Документы о ДТП</div>
+							<div class="docs__item-descr">
+								если оформлялось
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="docs__descr">
+					Предоставить можно оригиналы либо копии. Можно отсканировать или сфотографировать на телефон, но обратите внимание на то, чтобы текстовая информация была разборчиво читаема.
+				</div>
+				<div class="docs__telegramm">
+					<div class="docs__telegramm-ttl">Воспользуйтесь телеграммой для уведомления оппонента</div>
+					<div class="docs__descr">За 3 дня для жителей Москвы и 5 дней для жителей других городов</div>
+					<a href="#" target="_blank" class="btn docs__telegramm-btn">Скачать телеграмму</a>
+				</div>
+
+			</div>
+			
+		</div>
+	</section>
+	<section class="advantages">
+		<div class="adv__inner">
+			<div class="adv__container container">
+				<h3 class="section__ttl">Почему выбирают нас?</h3>
+				<div class="adv__cnt fr">
+					<div class="adv__item adv__item_problems fi-2">
+						<div class="adv__item-ttl">Какие проблемы возникают при оценке</div>
+						<div class="adv__item-descr-wrp skew">
+							<ul class="adv__item-descr noskew">
+								<li>Долгий срок <span>изготовления оценки</span></li>
+								<li>Отсутствие необходимых сертификатов <span>у оценщика или эксперта</span></li>
+								<li>Завышенная стоимость <span>отчета</span></li>
+								<li><span>Использование</span> пиратского ПО</li>
+								<li>Выполнение расчетов <span>не по действующему законодательству</span></li>
+								<li>Отказ в рассмотрении <span>результатов экспертизы или оспаривание в суде</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="adv__item adv__item_advantages fi-2">
+						<div class="adv__item-ttl">Почему стоит обратиться в нашу компанию</div>
+						<div class="adv__item-descr-wrp skew">
+							<ul class="adv__item-descr noskew">
+								<li><b>Срок.</b> Проведение автоэкспертизы от 1 дня</li>
+								<li><b>Квалификация.</b> Все эксперты-техники внесены в реестр Министерства Юстиций РФ</li>
+								<li><b>Доставка.</b> Экспертное заключение доставляется по вашему адресу бесплатно</li>
+								<li><b>Лицензионное ПО.</b> Использование лицензионных продуктов: Аудатэкс (Audatex), SilverDAT</li>
+								<li><b>География нашей работы.</b> Работаем по всей территории РФ с 2003 года</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="doubt">
+		<div class="doubt__inner">
+			<div class="doubt__container container">
+				<div class="doubt__ttl-wrp">
+					<div class="doubt__ttl">
+						<span>Сомневаетесь,</span> что затраты на наши услуги окупятся?
+					</div>
+					<div class="doubt__ttl_feed">
+						Попробуйте бесплатно!
+					</div>
+				</div>
+				<div class="doubt__cnt">
+					<ul class="doubt__adv-list">
+						<li>Бесплатно изучим материалы дела</li>
+						<li>Бесплатно сделаем предварительную оценку ущерба в случае заказа полной экспертизы</li>
+						<li>Скажем, как действовать в вашей ситуации</li>
+					</ul>
+					<div class="doubt__form-wrp">
+						<form action="[[~[[*id]]]]" method="post" class="doubt__form">
+							<div class="input__wrp input__wrp_tel">
+								<input type="tel" class="input__tel" name="doubt__tel" placeholder="Ваш телефон">
+							</div>
+							<input type="submit" class="btn input__submit" name="doubt__sumbit" value="Заказать бесплатную оценку">
+						</form>
+						Нажимая кнопку "Отправить", вы соглашаетесь с <a href="#" class="form__policy-link">политикой конфиденциальности</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about">
+		<div class="about__inner">
+			<div class="about__container container">
+				<div class="about__cnt fr">
+					<div class="about__descr fi-2">
+						<h3 class="section__ttl">О компании</h3>
+						<div class="about__descr-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam sunt tenetur consequatur neque? Repudiandae earum nemo veritatis facere molestias praesentium rerum sit repellat. Pariatur quia, fugit voluptatibus unde aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ducimus qui dicta, accusamus reiciendis sed numquam nostrum iure quaerat vel rerum quam, dolor explicabo nulla. Illum molestias laboriosam voluptate distinctio.
+						</div>
+					</div>
+					<div class="about__slider-wrp fi-2">
+						<div class="about__slider-wrp-ttl">Некоторые случаи из нашей практики</div>
+						<div class="about__slider owl-carousel">
+							<div class="about__slider-item" style="background-image: url(img/cases__img_1.jpg)">
+								<div class="about__slider-descr">
+									<div class="about__slider-descr-item">Суд постановил взыскать:</div>
+									<div class="about__slider-descr-item">
+										Со страховой компании Росгосстрах - <b>120 000 руб.</b>
+									</div>
+									<div class="about__slider-descr-item">
+										Со второго участника ДТП - <b>181 119, 03 руб.</b>
+									</div>
+									<div class="about__slider-descr-item">
+										<b>Общая сумма выплат составила 301 119, 03 руб.</b>
+									</div>
+								</div>								
+							</div>
+							<div class="about__slider-item" style="background-image: url(img/cases__img_1.jpg)">
+								<div class="about__slider-descr">
+									<div class="about__slider-descr-item">Суд постановил взыскать:</div>
+									<div class="about__slider-descr-item">
+										Со страховой компании Росгосстрах - <b>120 000 руб.</b>
+									</div>
+									<div class="about__slider-descr-item">
+										Со второго участника ДТП - <b>181 119, 03 руб.</b>
+									</div>
+									<div class="about__slider-descr-item">
+										<b>Общая сумма выплат составила 301 119, 03 руб.</b>
+									</div>
+								</div>								
+							</div>
+							<div class="about__slider-item" style="background-image: url(img/cases__img_1.jpg)">
+								<div class="about__slider-descr">
+									<div class="about__slider-descr-item">Суд постановил взыскать:</div>
+									<div class="about__slider-descr-item">
+										Со страховой компании Росгосстрах - <b>120 000 руб.</b>
+									</div>
+									<div class="about__slider-descr-item">
+										Со второго участника ДТП - <b>181 119, 03 руб.</b>
+									</div>
+									<div class="about__slider-descr-item">
+										<b>Общая сумма выплат составила 301 119, 03 руб.</b>
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about__promo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam a ea, soluta nemo voluptas ipsa natus labore non recusandae, animi accusamus veniam sit facilis amet vel, doloribus! Amet atque, autem.</div>
+			</div>
+		</div>
+	</section>
+	<section class="team">
+		<div class="team__inner">
+			<div class="team__container container">
+				<h3 class="section__ttl">Команда, которой можно довериться</h3>
+				<div class="team__cnt fr">
+					<div class="team__item fi-3">
+						<div class="team__item-top">
+							<div class="team__item-img shd" style="background-image: url(img/team__img_1.jpg)"></div>
+							<div class="team__item-right">
+								<a href="#" class="team__item-exp" data-fancybox>10 лет опыт</a>
+								<a href="#" class="team__item-cert" data-fancybox>
+									<div class="team__item-cert-img"><img src="img/team__cert-img.png" alt="team__cert-img.png" /></div>
+									<div class="team__item-cert-ttl">Сертификат</div>
+								</a>
+							</div>
+						</div>
+						<div class="team__item-info">
+							<div class="team__item-pos">
+								Автоэксперт
+							</div>
+							<div class="team__item-name">
+								Смоленский Павел Леонидович
+							</div>
+						</div>
+					</div>
+					<div class="team__item fi-3">
+						<div class="team__item-top">
+							<div class="team__item-img shd" style="background-image: url(img/team__img_2.jpg)"></div>
+							<div class="team__item-right">
+								<a href="#" class="team__item-exp" data-fancybox>10 лет опыт</a>
+								<a href="#" class="team__item-cert" data-fancybox>
+									<div class="team__item-cert-img"><img src="img/team__cert-img.png" alt="team__cert-img.png" /></div>
+									<div class="team__item-cert-ttl">Сертификат</div>
+								</a>
+							</div>
+						</div>
+						<div class="team__item-info">
+							<div class="team__item-pos">
+								Автоэксперт
+							</div>
+							<div class="team__item-name">
+								Золотухин Дмитрий Николаевич
+							</div>
+						</div>
+					</div>
+					<div class="team__item fi-3">
+						<div class="team__item-top">
+							<div class="team__item-img shd" style="background-image: url(img/team__img_3.jpg)"></div>
+							<div class="team__item-right">
+								<a href="#" class="team__item-exp" data-fancybox>10 лет опыт</a>
+								<a href="#" class="team__item-cert" data-fancybox>
+									<div class="team__item-cert-img"><img src="img/team__cert-img.png" alt="team__cert-img.png" /></div>
+									<div class="team__item-cert-ttl">Сертификат</div>
+								</a>
+							</div>
+						</div>
+						<div class="team__item-info">
+							<div class="team__item-pos">
+								Автоэксперт
+							</div>
+							<div class="team__item-name">
+								Карпов Дмитрий Вячеславович
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="map">
+		<div class="map__inner">
+			<div class="map__container container">
+				<h3 class="section__ttl">Статистика ДТП по регионам России</h3>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			</div>
+		</div>
+	</section>
+	<section class="calc">
+		<div class="calc__inner">
+			<div class="calc__container container">
+				<h3 class="section__ttl">
+					У вас особый случай? <br>
+					Хотите узнать точную стоимость
+				</h3>
+				<div class="calc__subttl">Определите стоимость оценки с помощью калькулятора</div>
+				<div class="calc__slider-wrp">
+					<form action="[[~[[*id]]]]" method="post" class="calc__slider owl-carousel">
+						<div class="calc__slider-item">
+							<label for="calc__radio_1-1" class="calc__radio-wrp">
+								<input type="radio" class="calc__radio" id="calc__radio_1-1" name="calc__damages" value="1-5">
+								<div class="calc__radio-btn">1-5</div>
+							</label>
+							<label for="calc__radio_1-2" class="calc__radio-wrp">
+								<input type="radio" class="calc__radio" id="calc__radio_1-2" name="calc__damages" value="5-10">
+								<div class="calc__radio-btn">5-10</div>
+							</label>
+							<label for="calc__radio_1-3" class="calc__radio-wrp">
+								<input type="radio" class="calc__radio" id="calc__radio_1-3" name="calc__damages" value="более 10">
+								<div class="calc__radio-btn">более 10</div>
+							</label>
+						</div>
+						<div class="calc__slider-item">
+							<label for="calc__radio_1-1" class="calc__radio-wrp">
+								<input type="radio" class="calc__radio" id="calc__radio_1-1" name="calc__damages" value="1-5">
+								<div class="calc__radio-btn">1-5</div>
+							</label>
+							<label for="calc__radio_1-2" class="calc__radio-wrp">
+								<input type="radio" class="calc__radio" id="calc__radio_1-2" name="calc__damages" value="5-10">
+								<div class="calc__radio-btn">5-10</div>
+							</label>
+							<label for="calc__radio_1-3" class="calc__radio-wrp">
+								<input type="radio" class="calc__radio" id="calc__radio_1-3" name="calc__damages" value="более 10">
+								<div class="calc__radio-btn">более 10</div>
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="rev">
+		<div class="rev__inner">
+			<div class="rev__container container">
+				<h3 class="section__ttl">Отзывы о нас</h3>
+				<div class="rev__subttl">С 2003 года мы помогли более чем 6 695 клиентам получить справедливые выплаты. Все наши клиенты благодарны нам за помощь в трудной ситуации.</div>
+				<div class="rev__slider-wrp">
+					<div class="rev__slider owl-carousel">
+						<div class="rev__slider-item shd" style="background-image: url(img/rev__item-img_1.jpg);">
+							<a href="#" class="rev__slider-item-play" data-fancybox>
+								<img src="img/rev__play-img.png" alt="rev__play-img.png">
+							</a>
+						</div>
+						<div class="rev__slider-item shd" style="background-image: url(img/cases__img_1.jpg);">
+							<a href="#" class="rev__slider-item-play" data-fancybox>
+								<img src="img/rev__play-img.png" alt="rev__play-img.png">
+							</a>
+						</div>
+						<div class="rev__slider-item shd" style="background-image: url(img/rev__item-img_1.jpg);">
+							<a href="#" class="rev__slider-item-play" data-fancybox>
+								<img src="img/rev__play-img.png" alt="rev__play-img.png">
+							</a>
+						</div>
+						<div class="rev__slider-item shd" style="background-image: url(img/rev__item-img_1.jpg);">
+							<a href="#" class="rev__slider-item-play" data-fancybox>
+								<img src="img/rev__play-img.png" alt="rev__play-img.png">
+							</a>
+						</div>
+						<div class="rev__slider-item shd" style="background-image: url(img/cases__img_1.jpg);">
+							<a href="#" class="rev__slider-item-play" data-fancybox>
+								<img src="img/rev__play-img.png" alt="rev__play-img.png">
+							</a>
+						</div>
+						<div class="rev__slider-item shd" style="background-image: url(img/rev__item-img_1.jpg);">
+							<a href="#" class="rev__slider-item-play" data-fancybox>
+								<img src="img/rev__play-img.png" alt="rev__play-img.png">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="cert">
+		<div class="cert__inner">
+			<div class="cert__container container">
+				<h3 class="section__ttl">Сертификаты и лицензии</h3>
+				<div class="cert__slider-wrp">
+					<div class="cert__slider owl-carousel">
+						<div class="cert__slider-item shd" style="background-image: url(img/cert__item-img_1.jpg);">
+							<a href="img/cert__item-img_2.jpg" class="cert__slider-item-play" data-fancybox>
+								<img src="img/cert__item-loupe-img.png" alt="cert__item-loupe-img.png">
+							</a>
+						</div>
+						<div class="cert__slider-item shd" style="background-image: url(img/cert__item-img_2.jpg);">
+							<a href="img/cert__item-img_2.jpg" class="cert__slider-item-play" data-fancybox>
+								<img src="img/cert__item-loupe-img.png" alt="cert__item-loupe-img.png">
+							</a>
+						</div>
+						<div class="cert__slider-item shd" style="background-image: url(img/cert__item-img_1.jpg);">
+							<a href="img/cert__item-img_2.jpg" class="cert__slider-item-play" data-fancybox>
+								<img src="img/cert__item-loupe-img.png" alt="cert__item-loupe-img.png">
+							</a>
+						</div>
+						<div class="cert__slider-item shd" style="background-image: url(img/cert__item-img_2.jpg);">
+							<a href="img/cert__item-img_2.jpg" class="cert__slider-item-play" data-fancybox>
+								<img src="img/cert__item-loupe-img.png" alt="cert__item-loupe-img.png">
+							</a>
+						</div>
+						<div class="cert__slider-item shd" style="background-image: url(img/cert__item-img_1.jpg);">
+							<a href="img/cert__item-img_2.jpg" class="cert__slider-item-play" data-fancybox>
+								<img src="img/cert__item-loupe-img.png" alt="cert__item-loupe-img.png">
+							</a>
+						</div>
+						<div class="cert__slider-item shd" style="background-image: url(img/cert__item-img_2.jpg);">
+							<a href="img/cert__item-img_2.jpg" class="cert__slider-item-play" data-fancybox>
+								<img src="img/cert__item-loupe-img.png" alt="cert__item-loupe-img.png">
+							</a>
+						</div>
+						<div class="cert__slider-item shd" style="background-image: url(img/cert__item-img_1.jpg);">
+							<a href="img/cert__item-img_2.jpg" class="cert__slider-item-play" data-fancybox>
+								<img src="img/cert__item-loupe-img.png" alt="cert__item-loupe-img.png">
+							</a>
+						</div>
+						<div class="cert__slider-item shd" style="background-image: url(img/cert__item-img_2.jpg);">
+							<a href="img/cert__item-img_2.jpg" class="cert__slider-item-play" data-fancybox>
+								<img src="img/cert__item-loupe-img.png" alt="cert__item-loupe-img.png">
+							</a>
+						</div>
+						<div class="cert__slider-item shd" style="background-image: url(img/cert__item-img_1.jpg);">
+							<a href="img/cert__item-img_2.jpg" class="cert__slider-item-play" data-fancybox>
+								<img src="img/cert__item-loupe-img.png" alt="cert__item-loupe-img.png">
+							</a>
+						</div>
+						<div class="cert__slider-item shd" style="background-image: url(img/cert__item-img_2.jpg);">
+							<a href="img/cert__item-img_2.jpg" class="cert__slider-item-play" data-fancybox>
+								<img src="img/cert__item-loupe-img.png" alt="cert__item-loupe-img.png">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="feed">
+		<div class="feed__inner">
+			<div class="feed__container container">
+				<h3 class="section__ttl">Получите бесплатную консультацию эксперта</h3>
+				<div class="feed__cont-wrp">
+					<a href="mailto:m1@samtu.ru" class="feed__cont-item feed__cont-item_mail">
+						m1@samtu.ru
+					</a>
+					<div class="feed__cont-item feed__cont-item_geo">
+						109544, г. Москва, ул. Новорогожская, д. 30, 1 этаж, оф. 9
+					</div>
+					<div class="feed__cont-item feed__cont-item_tel">
+						<a href="tel:7846212988">+7 (846) 212-98-88</a>
+						<a href="tel:78007077025">8 (800) 707-70-25</a>
+					</div>
+				</div>
+				<form action="[[~[[*id]]]]" method="post" class="feed__form">
+					<div class="input__wrp input__wrp_name">
+						<input type="tel" class="input__name" name="feed__name" placeholder="Имя">
+					</div>
+					<div class="input__wrp input__wrp_tel">
+						<input type="tel" class="input__tel" name="feed__tel" placeholder="Ваш телефон">
+					</div>
+					<div class="input__wrp input__wrp_mail">
+						<input type="tel" class="input__mail" name="feed__mail" placeholder="e-mail">
+					</div>
+					<input type="submit" class="btn input__submit" name="feed__submit" value="Записаться сейчас">
+				</form>
+				<div class="feed__map-cont-wrp">
+					<div class="feed__map-cont">
+						<div class="feed__map-ttl">Наши контакты</div>
+						<div class="feed__map-item feed__map-item_geo">109544, г. Москва, ул. Новорогожская, д. 30, 1 этаж, оф. 9</div>
+						<div class="feed__map-item feed__map-item_time">
+							Время работы: <br>
+							Пн-пт, 09:00-18:00
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer__container container">
+			<a href="#" class="footer__logo">
+				<img src="img/main-logo.png" alt="main-logo.png">
+			</a>
+			<div class="footer__info">
+				<div class="footer__contacts">
+					<a href="#" class="footer__item footer__item_about">
+						О компании
+					</a>
+					<a href="mailto:m1@samtu.ru" class="footer__item footer__item_mail">
+						m1@samtu.ru
+					</a>
+					<a href="tel:78007077025" class="footer__item footer__item_tel">
+						8 (800) 707-70-25
+					</a>
+					<div class="footer__item footer__item_time">
+						Пн-пт, 09:00-18:00
+					</div>
+					<a href="#popup_call" class="btn header__info-btn" data-fancybox>Оставить заявку</a>
+				</div>
+				<div class="footer__soc">
+					<a href="#" class="footer__soc-item"><img src="img/footer__soc_vk-img.png" alt="footer__soc_vk-img.png"></a>
+					<a href="#" class="footer__soc-item"><img src="img/footer__soc_you-img.png" alt="footer__soc_you-img.png"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script
+    src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
