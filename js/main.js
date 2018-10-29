@@ -1,3 +1,10 @@
+//Табы Все виды автоэкспертиз
+$('.views__tabs-item').on('click', function(){
+  $('.views__tabs-cnt-item').removeClass('active');
+  $('.views__tabs-item').removeClass('active');
+  $('.views__tabs-cnt-item[data-item="'+$(this).attr('data-item')+'"]').addClass('active');
+  $(this).addClass('active');
+});
 //Tabs
 $(document).ready(function () {
 $(".tab-content__item").hide();
