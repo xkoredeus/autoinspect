@@ -2131,16 +2131,11 @@ button:active{
                   }
 .map {
   position: relative;
-  -webkit-transform: skewY(6deg);
-  -moz-transform: skewY(6deg);
-  -ms-transform: skewY(6deg);
-  -o-transform: skewY(6deg);
-  transform: skewY(6deg);
   overflow: hidden;
-  z-index: 1;
+  /*z-index: 1;*/
   color: #000;
 }
-  .map:before {
+  /*.map:before {
     content: '';
     position: absolute;
     top: 0;
@@ -2152,7 +2147,7 @@ button:active{
     -ms-transform: skewY(6deg);
     -o-transform: skewY(6deg);
     transform: skewY(6deg);
-    /*background: url(../img/map__bg.jpg) no-repeat 50% 50% / cover;*/
+    background: url(../img/map__bg.jpg) no-repeat 50% 50% / cover;
     z-index: 1;
   }
   .map:after {
@@ -2176,6 +2171,9 @@ button:active{
     padding: 15px 0 50px;
     max-width: 900px;
     margin: 0 auto;
+  }*/
+  .map__container {
+    max-width: 1260px;
   }
     .map__container:before,
     .map__container:after {
@@ -2193,13 +2191,18 @@ button:active{
       transform: skewY(-6deg);
     }
     .map__container:before {
-      top: 0;
+      top: 60px;
     }
     .map__container:after {
-      bottom: 0;
+      bottom: 60px;
     }
       .map__inner .section__ttl {
         color: #000;
+        margin-bottom: 0;
+      }
+
+      #vmap {
+        margin: 0 auto;
       }
 
 .calc {

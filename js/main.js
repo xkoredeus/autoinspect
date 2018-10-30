@@ -1,56 +1,133 @@
-//Табы Все виды автоэкспертиз
-$('.views__tabs-item').on('click', function(){
-  $('.views__tabs-cnt-item').removeClass('active');
-  $('.views__tabs-item').removeClass('active');
-  $('.views__tabs-cnt-item[data-item="'+$(this).attr('data-item')+'"]').addClass('active');
-  $(this).addClass('active');
-});
-//Tabs
-$(document).ready(function () {
-$(".tab-content__item").hide();
-$(".tabs__container div.tab-content__item:first-child").show();
-    $('ul.tabs__list > li').click(function () {
-        if (!($(this).hasClass('active'))) {
-            var thisLi = $(this);
-            var numLi = thisLi.index();
-            thisLi.addClass('active').siblings().removeClass('active');
-            thisLi.parent().next().children('div').hide().eq(numLi).fadeIn('slow');
-        }
-    });
-});
-//Слайдер "Некоторые случаи"
-$('.about__slider').owlCarousel({
-      nav: true,
-      dots: false,
-      items: 1,
-      loop: false,
-      margin: 20,
-      navText: ["<img src='img/arrow_prev.png'>", "<img src='img/arrow_next.png'>"],
-});
-//Слайдер "Калькулятора"
-$('.calc__slider').owlCarousel({
-      nav: true,
-      dots: false,
-      items: 1,
-      loop: false,
-      margin: 20,
-      navText: ["<img src='img/arrow_prev.png'>", "<img src='img/arrow_next.png'>"],
-});
-//Слайдер Отзывов
-$('.rev__slider').owlCarousel({
-      nav: true,
-      dots: false,
-      items: 3,
-      loop: false,
-      margin: 20,
-      navText: ["<img src='img/arrow_prev.png'>", "<img src='img/arrow_next.png'>"],
-});
-//Слайдер Сертификаты
-$('.cert__slider').owlCarousel({
-      nav: true,
-      dots: false,
-      items: 6,
-      loop: false,
-      margin: 20,
-      navText: ["<img src='img/arrow_prev.png'>", "<img src='img/arrow_next.png'>"],
+$(document).ready(function(){
+  //Табы Все виды автоэкспертиз
+  $('.views__tabs-item').on('click', function(){
+    $('.views__tabs-cnt-item').removeClass('active');
+    $('.views__tabs-item').removeClass('active');
+    $('.views__tabs-cnt-item[data-item="'+$(this).attr('data-item')+'"]').addClass('active');
+    $(this).addClass('active');
+  });
+  //Tabs
+  $(document).ready(function () {
+  $(".tab-content__item").hide();
+  $(".tabs__container div.tab-content__item:first-child").show();
+      $('ul.tabs__list > li').click(function () {
+          if (!($(this).hasClass('active'))) {
+              var thisLi = $(this);
+              var numLi = thisLi.index();
+              thisLi.addClass('active').siblings().removeClass('active');
+              thisLi.parent().next().children('div').hide().eq(numLi).fadeIn('slow');
+          }
+      });
+  });
+  //Слайдер "Некоторые случаи"
+  $('.about__slider').owlCarousel({
+        nav: true,
+        dots: false,
+        items: 1,
+        loop: false,
+        margin: 20,
+        navText: ["<img src='img/arrow_prev.png'>", "<img src='img/arrow_next.png'>"],
+  });
+  //Слайдер "Калькулятора"
+  $('.calc__slider').owlCarousel({
+        nav: true,
+        dots: false,
+        items: 1,
+        loop: false,
+        margin: 20,
+        navText: ["<img src='img/arrow_prev.png'>", "<img src='img/arrow_next.png'>"],
+  });
+  //Слайдер Отзывов
+  $('.rev__slider').owlCarousel({
+        nav: true,
+        dots: false,
+        items: 3,
+        loop: false,
+        margin: 20,
+        navText: ["<img src='img/arrow_prev.png'>", "<img src='img/arrow_next.png'>"],
+  });
+  //Слайдер Сертификаты
+  $('.cert__slider').owlCarousel({
+        nav: true,
+        dots: false,
+        items: 6,
+        loop: false,
+        margin: 20,
+        navText: ["<img src='img/arrow_prev.png'>", "<img src='img/arrow_next.png'>"],
+  });
+  //Карта статистики ДТП
+  var data_obj = {
+      'ul':  ['ГУЗ "Центральная городская клиническая больница г. Ульяновска"','Медицинский центр "Академия"','Медицинский центр "Мед-Профи"','Клиника Медозон'],
+      'ks':  ['ООО ВАШ ДОКТОР','Медицинский центр Ол-мед'],
+      'tu':  ['Многопрофильный клинико-диагностический центр Доктор-А'],
+      'nn':  ['Дорожная клиническая больница на ст. Нижний Новгород ОАО "РЖД"','Медицинский центр "Добрый доктор"','Медицинский центр "Гарантия"',
+              'Медицинский центр "Добрый доктор"'],
+      'cl':  ['Дорожная клиническая больница на ст.Челябинск ОАО "РЖД"','Медицинский центр "НовоМед"','Семейная клиника "Жемчужина"','КЛИНИКА ПРОФЕССОРА КИНЗЕРСКОГО',
+              'Стоматология "ЛК Успех"'],
+      'as':  ['ООО "Здоровье"'],
+      'le':  ['Медицинский центр "МАГНИТ"','Медицинский центр "Меди-Проф"','ООО "НАЦИОНАЛЬНЫЙ ДИАГНОСТИЧЕСКИЙ ЦЕНТР"','ООО "Прайд"','ООО "Компания АВАмедика"','Медицинская клиника Панорама Мед'],
+      'so':  ['Мега'],
+      'ob':  ['Сеть многопрофильных клиник "Медгард"','Уральская Здравница','Консультативно-диагностический центр','Медицинский центр Мусаловой'],
+      'mc':  ['Клиника "Медси"','Медицинская клиника НАКФФ','Многопрофильный медицинский центр "СМ-Клиника"' , 'ООО "ТРИ ПОКОЛЕНИЯ"'],
+      'as':  ['Медицинский диагностический центр "Миг"'],
+      'sv':  ['Медицинское объединение "Новая больница"'],
+      'st':  ['Семейный медицинский центр "Первый доктор"'],
+      'mu':  ['НУЗ УЗЛОВАЯ БОЛЬНИЦА НА СТ. КАНДАЛАКША ОАО РЖД'],
+      'bs':  ['Многопрофильный медицинский центр "Профилактическая медицина"','Медицинский центр "Плюс"','Лечебно-диагностический центр "Биомед"'],
+      'pr':  ['ООО "Сименс Финанс 2"'],
+      'vm':  ['ООО "Владимирский диагностический центр"','Учреждение Здравоохранения Областной Диагностический центр'],
+      'iv':  ['ООО "УЗ Областной диагностический центр"'],
+      'ki':  ['Медицинский центр "АРНИКА"'],
+      'pz':  ['Диагностический центр "Биокор"'],
+      'rz':  ['Детсткий медицинский центр"Киндер Клиник"','Семейная клиника "Первый шаг"'],
+      'kr':  ['Медицинский центр "Клиницист"'],
+      'vo':  ['Медицинский центр "ЛЕАН"'],
+      'yr':  ['Хоккейный клуб "Локомотив"'],
+      'tl':  ['Центр восстановительно медицины Феникс'],
+      'ta':  ['Медицинский центр "Медгард"','Медицинский центр Высоких технологий','Семейная клиника "Танар"','Диагносический центр "Барсмед"'],
+      'sr':  ['Медицинский Di Центр','Клиника доктора Парамонова','ММУП "Лечебно-консультативный центр г. Саратова"','Клиника Педиатрии и Детской Стоматологии доктора Трухманова',
+              'Стоматологическая клиника Доктора Трухманова','Клиника рентгендиагностики Доктора Трухманова'],
+      'ss':  ['Волгопромлизинг', 'ГБУЗ СО  "Самарская городская больница № 7" ', 
+              'ГБУЗ СО СГП №9 Октябрьского района', 'НУЗ "Дорожная клиническая больница на станции Самара ОАО "РЖД"' , 
+              'ИП Трахтенберг Алексей Юрьевич' , 'ГБУЗ СО Самарская городская больница №6' , 'ГБУЗ СО "СГКБ №8"' , 
+              'ММБУ ГБ № 10  г.о. Самара' , 'ГБУЗ СО СГБ № 4','ММБУ ГБ №5 г.о. Самара' , 
+              'ГБУЗ СО "Самарская клиническая больница № 1 имени Н.И. Пирогова"' , 'ГБУЗ СО СГП № 10 Советского р-на  г.о. Самара' , 
+              'ГБУЗ СО "Самарская городская поликлиника №3"' , 'ММБУ ГП № 4  Кировского района г.о. Самара' , 
+              'ММБУ ГП №13 Железнодорожного района г.о. Самара' , 'ММБУ "ДГКБ № 1 имени Ивановой"  г.о. Самара' , 
+              'ММБУ ДС "Здоровье" г.о. Самара', 'ГБУЗ СО "Самарская медико-санитарная часть №5 Кировского района"', 'Клиника Гавриловой']
+  };  
+  colorRegion  = '#39be7c'; // Цвет всех регионов
+  focusRegion  = '#39be7c'; // Цвет подсветки регионов при наведении на объекты из списка
+  selectRegion  = '#316aa1'; // Цвет изначально подсвеченных регионов 
+  highlighted_states  = {};  
+  // Массив подсвечиваемых регионов, указанных в массиве data_obj
+  for(iso in data_obj){
+      highlighted_states[iso]  = selectRegion;
+  } 
+  $('#vmap').vectorMap({
+      map: 'russia',
+      backgroundColor: '#ffffff',
+      borderColor:  '#ffffff',
+      borderWidth:  0.6,
+      color: colorRegion,
+      colors:  highlighted_states,
+      hoverOpacity: 1,
+      enableZoom: true,
+      showTooltip: true,
+      //  Отображаем объекты если они есть
+      onLabelShow:  function(event, label, code){
+          name  = '<strong>'+label.text()+'</strong><br>';
+          if(data_obj[code]){
+              list_obj  = '<ul>';
+              for(ob  in data_obj[code]){
+                  list_obj  += '<li>'+data_obj[code][ob]+'</li>';
+              }
+              list_obj  += '</ul>';
+          }else{
+              list_obj  = '';
+          }                                                             
+          label.html(name  + list_obj);
+          list_obj  = '';
+      }
+  });
 });
