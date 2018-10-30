@@ -1125,7 +1125,7 @@ button:active{
         margin: 30px auto 50px;
       }
       .stages__cnt_got {
-        margin: 1000px;
+        max-width: 1000px;
       }
         .stages__item {
           color:#000;
