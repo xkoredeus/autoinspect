@@ -57,48 +57,91 @@ $(document).ready(function(){
   });
   //Карта статистики ДТП
   var data_obj = {
-      'ul':  ['ГУЗ "Центральная городская клиническая больница г. Ульяновска"','Медицинский центр "Академия"','Медицинский центр "Мед-Профи"','Клиника Медозон'],
-      'ks':  ['ООО ВАШ ДОКТОР','Медицинский центр Ол-мед'],
-      'tu':  ['Многопрофильный клинико-диагностический центр Доктор-А'],
-      'nn':  ['Дорожная клиническая больница на ст. Нижний Новгород ОАО "РЖД"','Медицинский центр "Добрый доктор"','Медицинский центр "Гарантия"',
-              'Медицинский центр "Добрый доктор"'],
-      'cl':  ['Дорожная клиническая больница на ст.Челябинск ОАО "РЖД"','Медицинский центр "НовоМед"','Семейная клиника "Жемчужина"','КЛИНИКА ПРОФЕССОРА КИНЗЕРСКОГО',
-              'Стоматология "ЛК Успех"'],
-      'as':  ['ООО "Здоровье"'],
-      'le':  ['Медицинский центр "МАГНИТ"','Медицинский центр "Меди-Проф"','ООО "НАЦИОНАЛЬНЫЙ ДИАГНОСТИЧЕСКИЙ ЦЕНТР"','ООО "Прайд"','ООО "Компания АВАмедика"','Медицинская клиника Панорама Мед'],
-      'so':  ['Мега'],
-      'ob':  ['Сеть многопрофильных клиник "Медгард"','Уральская Здравница','Консультативно-диагностический центр','Медицинский центр Мусаловой'],
-      'mc':  ['Клиника "Медси"','Медицинская клиника НАКФФ','Многопрофильный медицинский центр "СМ-Клиника"' , 'ООО "ТРИ ПОКОЛЕНИЯ"'],
-      'as':  ['Медицинский диагностический центр "Миг"'],
-      'sv':  ['Медицинское объединение "Новая больница"'],
-      'st':  ['Семейный медицинский центр "Первый доктор"'],
-      'mu':  ['НУЗ УЗЛОВАЯ БОЛЬНИЦА НА СТ. КАНДАЛАКША ОАО РЖД'],
-      'bs':  ['Многопрофильный медицинский центр "Профилактическая медицина"','Медицинский центр "Плюс"','Лечебно-диагностический центр "Биомед"'],
-      'pr':  ['ООО "Сименс Финанс 2"'],
-      'vm':  ['ООО "Владимирский диагностический центр"','Учреждение Здравоохранения Областной Диагностический центр'],
-      'iv':  ['ООО "УЗ Областной диагностический центр"'],
-      'ki':  ['Медицинский центр "АРНИКА"'],
-      'pz':  ['Диагностический центр "Биокор"'],
-      'rz':  ['Детсткий медицинский центр"Киндер Клиник"','Семейная клиника "Первый шаг"'],
-      'kr':  ['Медицинский центр "Клиницист"'],
-      'vo':  ['Медицинский центр "ЛЕАН"'],
-      'yr':  ['Хоккейный клуб "Локомотив"'],
-      'tl':  ['Центр восстановительно медицины Феникс'],
-      'ta':  ['Медицинский центр "Медгард"','Медицинский центр Высоких технологий','Семейная клиника "Танар"','Диагносический центр "Барсмед"'],
-      'sr':  ['Медицинский Di Центр','Клиника доктора Парамонова','ММУП "Лечебно-консультативный центр г. Саратова"','Клиника Педиатрии и Детской Стоматологии доктора Трухманова',
-              'Стоматологическая клиника Доктора Трухманова','Клиника рентгендиагностики Доктора Трухманова'],
-      'ss':  ['Волгопромлизинг', 'ГБУЗ СО  "Самарская городская больница № 7" ', 
-              'ГБУЗ СО СГП №9 Октябрьского района', 'НУЗ "Дорожная клиническая больница на станции Самара ОАО "РЖД"' , 
-              'ИП Трахтенберг Алексей Юрьевич' , 'ГБУЗ СО Самарская городская больница №6' , 'ГБУЗ СО "СГКБ №8"' , 
-              'ММБУ ГБ № 10  г.о. Самара' , 'ГБУЗ СО СГБ № 4','ММБУ ГБ №5 г.о. Самара' , 
-              'ГБУЗ СО "Самарская клиническая больница № 1 имени Н.И. Пирогова"' , 'ГБУЗ СО СГП № 10 Советского р-на  г.о. Самара' , 
-              'ГБУЗ СО "Самарская городская поликлиника №3"' , 'ММБУ ГП № 4  Кировского района г.о. Самара' , 
-              'ММБУ ГП №13 Железнодорожного района г.о. Самара' , 'ММБУ "ДГКБ № 1 имени Ивановой"  г.о. Самара' , 
-              'ММБУ ДС "Здоровье" г.о. Самара', 'ГБУЗ СО "Самарская медико-санитарная часть №5 Кировского района"', 'Клиника Гавриловой']
+    'ch':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Chukotka Autonomous Okrug
+    'ka':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Kamchatka Krai
+    'ma':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Magadan Oblast
+    'sa':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Sakha Republic
+    'am':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Amur Oblast
+    'pr':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Primorsky Krai
+    'eu':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Jewish Autonomous Oblast
+    'ha':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Khabarovsk Krai
+    'sh':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Sakhalin Oblast
+    'om':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Omsk Oblast
+    'nv':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Novosibirsk Oblast
+    'al':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Altai Krai
+    'lt':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Altai Republic
+    'tv':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Tuva Republic
+    'hk':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Republic of Khakassia
+    'km':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Kemerovo Oblast
+    'tm':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Tomsk Oblast
+    'zb':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Zabaykalsky Krai
+    'br':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Buryat Republic
+    'ir':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Irkutsk Oblast
+    'kr':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Krasnoyarsk Krai
+    'ya':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Yamalo-Nenets Autonomous Okrug
+    'ht':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Khanty–Mansi Autonomous Okrug
+    'tu':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Tyumen Oblast
+    'ku':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Kurgan Oblast
+    'cl':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Chelyabinsk Oblast
+    'sv':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Sverdlovsk Oblast
+    'ar':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Arkhangelsk Oblast
+    'ne':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Nenets Autonomous Okrug
+    'ko':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Komi Republic
+    'mu':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Murmansk Oblast
+    'vo':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Vologda Oblast
+    'no':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Novgorod Oblast
+    'ps':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Pskov Oblast
+    'le':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Leningrad Oblast
+    'kl':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Republic of Karelia
+    'kn':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Kaliningrad Oblast
+    'da':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Republic of Dagestan
+    'st':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Stavropol Krai
+    'so':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Republic of North Ossetia–Alania
+    'kb':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Kabardino-Balkar Republic
+    'kh':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Karachay–Cherkess Republic
+    'cc':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Chechen Republic
+    'in':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Republic of Ingushetia
+    'ad':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Republic of Adygea
+    'ks':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Krasnodar Krai
+    'ro':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Rostov Oblast
+    'kk':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Republic of Kalmykia
+    'as':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Astrakhan Oblast
+    'vl':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Volgograd Oblast
+    'tr':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Tver Oblast
+    'sm':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Smolensk Oblast
+    'bn':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Bryansk Oblast
+    'ky':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Kursk Oblast
+    'bl':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Belgorod Oblast
+    'pr':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Oryol Oblast
+    'kj':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Kaluga Oblast
+    'tl':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Tula Oblast
+    'lp':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Lipetsk Oblast
+    'mc':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Moscow Oblast
+    'rz':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Ryazan Oblast
+    'tb':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Tambov Oblast
+    'vm':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Vladimir Oblast
+    'iv':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Ivanovo Oblast
+    'yr':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Yaroslavl Oblast
+    'kt':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Kostroma Oblast
+    'nn':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Nizhny Novgorod Oblast
+    'mr':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Republic of Mordovia
+    'pz':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Penza Oblast
+    'sr':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Saratov Oblast
+    'ss':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Samara Oblast
+    'ob':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Orenburg Oblast
+    'bs':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Republic of Bashkortostan
+    'ul':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Ulyanovsk Oblast
+    'cu':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Chuvash Republic
+    'ta':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Republic of Tatarstan
+    'ml':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Mari El Republic
+    'ud':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Udmurt Republic
+    'ki':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Kirov Oblast
+    'pe':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Perm Krai
+    'vn':  ['<table class="map-lable__table"><tr><td></td><td>Абсолютное значение</td><td>Сравнение с АППГ</td></tr><tr><td>ДТП</td><td>133</td><td>-13.6</td></tr><tr><td>Ранено</td><td>172</td><td>-11.3</td></tr>'], // Voronezh Oblast
   };  
-  colorRegion  = '#39be7c'; // Цвет всех регионов
+  colorRegion  = '#fff'; // Цвет всех регионов
   focusRegion  = '#39be7c'; // Цвет подсветки регионов при наведении на объекты из списка
-  selectRegion  = '#316aa1'; // Цвет изначально подсвеченных регионов 
+  selectRegion  = '#fff'; // Цвет изначально подсвеченных регионов 
   highlighted_states  = {};  
   // Массив подсвечиваемых регионов, указанных в массиве data_obj
   for(iso in data_obj){
@@ -106,17 +149,18 @@ $(document).ready(function(){
   } 
   $('#vmap').vectorMap({
       map: 'russia',
-      backgroundColor: '#ffffff',
-      borderColor:  '#ffffff',
-      borderWidth:  0.6,
+      backgroundColor: 'transparent',
+      borderColor:  '#000',
+      borderWidth:  0.95,
       color: colorRegion,
       colors:  highlighted_states,
-      hoverOpacity: 1,
+      hoverColors: focusRegion,
+      hoverOpacity: null,
       enableZoom: true,
       showTooltip: true,
       //  Отображаем объекты если они есть
       onLabelShow:  function(event, label, code){
-          name  = '<strong>'+label.text()+'</strong><br>';
+          name  = '<div class="map-lable__ttl">'+label.text()+'</div><br>';
           if(data_obj[code]){
               list_obj  = '<ul>';
               for(ob  in data_obj[code]){
@@ -130,4 +174,5 @@ $(document).ready(function(){
           list_obj  = '';
       }
   });
+
 });
