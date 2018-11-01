@@ -8,6 +8,7 @@
 	<title>Auto - Inspection</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="js/map/jqvmap.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<!--[if lte IE 8]>
 		<script src="js/html5.js"></script>
@@ -78,27 +79,27 @@
 			<div class="events__cnt skew">
 				<div class="events__item shd">
 					<span class="noskew">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos ducimus dolorem facilis laborum numquam a.
+						Вам необходимо предъявить претензию к причинителю вреда и нужно определить величину ущерба
 					</span>
 				</div>
 				<div class="events__item shd">
 					<span class="noskew">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos ducimus dolorem facilis laborum numquam a.
+						Вам выплатили страховое возмещение, но его не хватает на полноценный ремонт
 					</span>
 				</div>
 				<div class="events__item shd">
 					<span class="noskew">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos ducimus dolorem facilis laborum numquam a.
+						Вы участник ДТП и не согласны с ранее выполненной оценкой, считаете ее несправедливой
 					</span>
 				</div>
 				<div class="events__item shd">
 					<span class="noskew">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos ducimus dolorem facilis laborum numquam a.
+						Вы попали в ДТП, а у виновника отсутствует или поддельный полис ОСАГО
 					</span>
 				</div>
 				<div class="events__item shd">
 					<span class="noskew">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos ducimus dolorem facilis laborum numquam a.
+						Ответчик в ДТП - иностранец, застрахованный по Зеленой карте (GREEN CARD)
 					</span>
 				</div>
 			</div>
@@ -107,33 +108,33 @@
 	<section class="views__section">
 		<div class="views__section-inner">
 			<div class="container">
-				<h3 class="section__ttl">Все виды автоэкспертиз в Москве и МО НАВЕДЕНИЕ НАВЕДЕНИЕ НАВЕДЕНИЕ</h3>
+				<h3 class="section__ttl">Все виды автоэкспертиз в Москве и МО</h3>
 				<div class="views__wrp">
 					<div class="views__tabs views__tabs_left">
-						<div class="views__tabs-item active">
+						<div class="views__tabs-item active" data-item="1">
 							<div class="views__tabs-item-img"></div>
 							<div class="views__tabs-item-descr">Независимая автоэкспертиза (оценка ущерба после ДТП)</div>
 						</div>
-						<div class="views__tabs-item">
+						<div class="views__tabs-item" data-item="2">
 							<div class="views__tabs-item-img"></div>
 							<div class="views__tabs-item-descr">Транспортная трасологическая экспертиза</div>
 						</div>
-						<div class="views__tabs-item">
+						<div class="views__tabs-item" data-item="3">
 							<div class="views__tabs-item-img"></div>
 							<div class="views__tabs-item-descr">Экспертиза обстоятельств ДТП</div>
 						</div>
-						<div class="views__tabs-item">
+						<div class="views__tabs-item" data-item="4">
 							<div class="views__tabs-item-img"></div>
 							<div class="views__tabs-item-descr">Расчет утраты товарной стоимости</div>
 						</div>
 					</div>
 					<div class="views__tabs-cnt">
 						<!-- Item 1 -->
-						<div class="views__tabs-cnt-item active">
+						<div class="views__tabs-cnt-item active" data-item="1">
 							<div class="views__tabs-cnt-ttl">Экспертиза обстоятельств ДТП</div>
 							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
 							<div class="views__tabs-cnt-descr">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque?
+								К этой экспертизе прибегают в тех случаях, когда необходимо восстановить точную картину произошедшего события, особенно если нет свидетельских показаний, либо показания противоречивы и недостаточно исчерпывающий. Инициатором экспертизы может быть потерпевший, либо виновник дорожно-транспортного происшествия, если он полагает, что его вины в случившейся аварии нет. Исследование также может быть назначено по решению суда. свойств отдельных деталей и узлов автомобиля и возникает разница в цене «битого» и «небитого» автомобиля. 
 							</div>
 							<div class="views__tabs-cnt-feed">
 								<div class="views__tabs-cnt-feed-ttl">Заказать услугу от 2 500 руб</div>
@@ -147,11 +148,11 @@
 						</div>
 						<!-- / Item 1 -->
 						<!-- Item 2 -->
-						<div class="views__tabs-cnt-item">
+						<div class="views__tabs-cnt-item" data-item="2">
 							<div class="views__tabs-cnt-ttl">Транспортная трасологическая экспертиза</div>
 							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
 							<div class="views__tabs-cnt-descr">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque?
+								К этой экспертизе прибегают в тех случаях, когда необходимо восстановить точную картину произошедшего события, особенно если нет свидетельских показаний, либо показания противоречивы и недостаточно исчерпывающий. Инициатором экспертизы может быть потерпевший, либо виновник дорожно-транспортного происшествия, если он полагает, что его вины в случившейся аварии нет. Исследование также может быть назначено по решению суда. свойств отдельных деталей и узлов автомобиля и возникает разница в цене «битого» и «небитого» автомобиля. 
 							</div>
 							<div class="views__tabs-cnt-feed">
 								<div class="views__tabs-cnt-feed-ttl">Заказать услугу от 2 500 руб</div>
@@ -165,11 +166,11 @@
 						</div>
 						<!-- / Item 2 -->
 						<!-- Item 3 -->
-						<div class="views__tabs-cnt-item">
+						<div class="views__tabs-cnt-item" data-item="3">
 							<div class="views__tabs-cnt-ttl">Экспертиза обстоятельств ДТП</div>
 							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
 							<div class="views__tabs-cnt-descr">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque?
+								К этой экспертизе прибегают в тех случаях, когда необходимо восстановить точную картину произошедшего события, особенно если нет свидетельских показаний, либо показания противоречивы и недостаточно исчерпывающий. Инициатором экспертизы может быть потерпевший, либо виновник дорожно-транспортного происшествия, если он полагает, что его вины в случившейся аварии нет. Исследование также может быть назначено по решению суда. свойств отдельных деталей и узлов автомобиля и возникает разница в цене «битого» и «небитого» автомобиля. 
 							</div>
 							<div class="views__tabs-cnt-feed">
 								<div class="views__tabs-cnt-feed-ttl">Заказать услугу от 2 500 руб</div>
@@ -183,11 +184,11 @@
 						</div>
 						<!-- / Item 3 -->
 						<!-- Item 4 -->
-						<div class="views__tabs-cnt-item">
+						<div class="views__tabs-cnt-item" data-item="4">
 							<div class="views__tabs-cnt-ttl">Расчет утраты товарной стоимости</div>
 							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
 							<div class="views__tabs-cnt-descr">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque?
+								К этой экспертизе прибегают в тех случаях, когда необходимо восстановить точную картину произошедшего события, особенно если нет свидетельских показаний, либо показания противоречивы и недостаточно исчерпывающий. Инициатором экспертизы может быть потерпевший, либо виновник дорожно-транспортного происшествия, если он полагает, что его вины в случившейся аварии нет. Исследование также может быть назначено по решению суда. свойств отдельных деталей и узлов автомобиля и возникает разница в цене «битого» и «небитого» автомобиля. 
 							</div>
 							<div class="views__tabs-cnt-feed">
 								<div class="views__tabs-cnt-feed-ttl">Заказать услугу от 2 500 руб</div>
@@ -201,11 +202,11 @@
 						</div>
 						<!-- / Item 4 -->
 						<!-- Item 5 -->
-						<div class="views__tabs-cnt-item">
+						<div class="views__tabs-cnt-item" data-item="5">
 							<div class="views__tabs-cnt-ttl">Оценка рыночной стоимости автотранспорта</div>
 							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
 							<div class="views__tabs-cnt-descr">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque?
+								К этой экспертизе прибегают в тех случаях, когда необходимо восстановить точную картину произошедшего события, особенно если нет свидетельских показаний, либо показания противоречивы и недостаточно исчерпывающий. Инициатором экспертизы может быть потерпевший, либо виновник дорожно-транспортного происшествия, если он полагает, что его вины в случившейся аварии нет. Исследование также может быть назначено по решению суда. свойств отдельных деталей и узлов автомобиля и возникает разница в цене «битого» и «небитого» автомобиля. 
 							</div>
 							<div class="views__tabs-cnt-feed">
 								<div class="views__tabs-cnt-feed-ttl">Заказать услугу от 2 500 руб</div>
@@ -219,11 +220,11 @@
 						</div>
 						<!-- / Item 5 -->
 						<!-- Item 6 -->
-						<div class="views__tabs-cnt-item">
+						<div class="views__tabs-cnt-item" data-item="6">
 							<div class="views__tabs-cnt-ttl">Судебная экспертиза</div>
 							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
 							<div class="views__tabs-cnt-descr">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque?
+								К этой экспертизе прибегают в тех случаях, когда необходимо восстановить точную картину произошедшего события, особенно если нет свидетельских показаний, либо показания противоречивы и недостаточно исчерпывающий. Инициатором экспертизы может быть потерпевший, либо виновник дорожно-транспортного происшествия, если он полагает, что его вины в случившейся аварии нет. Исследование также может быть назначено по решению суда. свойств отдельных деталей и узлов автомобиля и возникает разница в цене «битого» и «небитого» автомобиля. 
 							</div>
 							<div class="views__tabs-cnt-feed">
 								<div class="views__tabs-cnt-feed-ttl">Заказать услугу от 2 500 руб</div>
@@ -237,11 +238,11 @@
 						</div>
 						<!-- / Item 6 -->
 						<!-- Item 7 -->
-						<div class="views__tabs-cnt-item">
+						<div class="views__tabs-cnt-item" data-item="7">
 							<div class="views__tabs-cnt-ttl">Судебная экспертиза</div>
 							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
 							<div class="views__tabs-cnt-descr">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque?
+								К этой экспертизе прибегают в тех случаях, когда необходимо восстановить точную картину произошедшего события, особенно если нет свидетельских показаний, либо показания противоречивы и недостаточно исчерпывающий. Инициатором экспертизы может быть потерпевший, либо виновник дорожно-транспортного происшествия, если он полагает, что его вины в случившейся аварии нет. Исследование также может быть назначено по решению суда. свойств отдельных деталей и узлов автомобиля и возникает разница в цене «битого» и «небитого» автомобиля. 
 							</div>
 							<div class="views__tabs-cnt-feed">
 								<div class="views__tabs-cnt-feed-ttl">Заказать услугу от 2 500 руб</div>
@@ -255,11 +256,11 @@
 						</div>
 						<!-- / Item 7 -->
 						<!-- Item 8 -->
-						<div class="views__tabs-cnt-item">
+						<div class="views__tabs-cnt-item" data-item="8">
 							<div class="views__tabs-cnt-ttl">Экспертиза выявленных дефектов в период гарантийного срока эксплуатации</div>
 							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
 							<div class="views__tabs-cnt-descr">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt eos, id facilis saepe provident ex ipsam, veniam animi repellat, dignissimos quaerat maiores! Cum repudiandae libero modi minus tempora cumque?
+								К этой экспертизе прибегают в тех случаях, когда необходимо восстановить точную картину произошедшего события, особенно если нет свидетельских показаний, либо показания противоречивы и недостаточно исчерпывающий. Инициатором экспертизы может быть потерпевший, либо виновник дорожно-транспортного происшествия, если он полагает, что его вины в случившейся аварии нет. Исследование также может быть назначено по решению суда. свойств отдельных деталей и узлов автомобиля и возникает разница в цене «битого» и «небитого» автомобиля. 
 							</div>
 							<div class="views__tabs-cnt-feed">
 								<div class="views__tabs-cnt-feed-ttl">Заказать услугу от 2 500 руб</div>
@@ -274,19 +275,19 @@
 						<!-- / Item 8 -->
 					</div>
 					<div class="views__tabs views__tabs_right">
-						<div class="views__tabs-item">
+						<div class="views__tabs-item" data-item="5">
 							<div class="views__tabs-item-img"></div>
 							<div class="views__tabs-item-descr">Оценка рыночной стоимости автотранспорта</div>
 						</div>
-						<div class="views__tabs-item">
+						<div class="views__tabs-item" data-item="6">
 							<div class="views__tabs-item-img"></div>
 							<div class="views__tabs-item-descr">Судебная экспертиза</div>
 						</div>
-						<div class="views__tabs-item">
+						<div class="views__tabs-item" data-item="7">
 							<div class="views__tabs-item-img"></div>
 							<div class="views__tabs-item-descr">Экспертиза качества проведенного ремонта</div>
 						</div>
-						<div class="views__tabs-item">
+						<div class="views__tabs-item" data-item="8">
 							<div class="views__tabs-item-img"></div>
 							<div class="views__tabs-item-descr">Экспертиза выявленных дефектов в период гарантийного срока эксплуатации</div>
 						</div>
@@ -299,11 +300,11 @@
 		<div class="stages__inner">
 			<div class="stages__cnt-wrp">
 				<div class="stages__container container">
-					<h3 class="section__ttl">Начните работу вместе с нами СТРЕЛКА  СТРЕЛКА СТРЕЛКА</h3>
+					<h3 class="section__ttl">Начните работу вместе с нами</h3>
 					<div class="stages__tabs tabs">
 						<ul class="tabs__list">
-							<li><span>Что вы получите?</span></li>
 							<li class="active"><span>С чего начать?</span></li>
+							<li><span>Что вы получите?</span></li>
 						</ul>
 						<div class="tabs__container">
 							<div class="tab-content__item stages-tabs-content__item">
@@ -328,24 +329,27 @@
 								</div>
 							</div>
 							<div class="tab-content__item stages-tabs-content__item">
-								<div class="stages__subttl">Что вы получите Оценка ущерба в 3 этапа</div>
-								<div class="stages__cnt">
-									<div class="stages__item">
-										<span class="stages__item-ttl">Позвоните нам за консультацией и запишитесь на осмотр</span>
-										<span class="stages__item-num">1</span>
+								<div class="stages__subttl">Вы получаете экспертное заключение, содержащее:</div>
+								<div class="stages__cnt fr stages__cnt_got">
+									<div class="stages__item_got fi-4">
+										<span class="stages__item_got-img" style="background-image: url(img/stages__item-img_1.png)"></span>
+										<span class="stages__item_got-ttl">Акт осмотра автомобиля</span>
 									</div>
-									<div class="stages__item">
-										<span class="stages__item-ttl">В согласованное с Вами время приедет эксперт</span>
-										<span class="stages__item-num">2</span>
+									<div class="stages__item_got fi-4">
+										<span class="stages__item_got-img" style="background-image: url(img/stages__item-img_2.png)"></span>
+										<span class="stages__item_got-ttl">Оценку ущерба (сумма с износом и без)</span>
 									</div>
-									<div class="stages__item">
-										<span class="stages__item-ttl">Вы получаете готовый пакет документов для обращения к ответчику с доставкой</span>
-										<span class="stages__item-num">3</span>
+									<div class="stages__item_got fi-4">
+										<span class="stages__item_got-img" style="background-image: url(img/stages__item-img_3.png)"></span>
+										<span class="stages__item_got-ttl">Фотографии повреждений</span>
+									</div>
+									<div class="stages__item_got fi-4">
+										<span class="stages__item_got-img" style="background-image: url(img/stages__item-img_4.png)"></span>
+										<span class="stages__item_got-ttl">Наши сертификаты и свидетельства</span>
 									</div>
 								</div>
-								<div class="stages__descr">
-									<span>Срок предоставления экспертного заключения с полным комплектом документов - от 1 дня</span>
-									<span>Все необходимое для досудебного и судебного урегулирования правовых споров</span>
+								<div class="stages__descr stages__descr_got">
+									Этого достаточно для предъявления обоснованных требований о возмещении ущерба, в том числе для подачи иска в суд. Деньги, потраченные на наши услуги будут возвращены в полном объеме вашим ответчиком (страховой компанией, виновником аварии, РСА на основании ст. 98 ГПК РФ.
 								</div>
 							</div>
 						</div>
@@ -364,7 +368,7 @@
 							<div class="docs__item-img" style="background-image: url(img/docs__img_1.png)"></div>
 							<div class="docs__item-ttl">Паспорт</div>
 							<div class="docs__item-descr">
-								заказчика оценки. Нужен перая страница и страница с регистрацией
+								заказчика оценки. Нужна первая страница и страница с регистрацией
 							</div>
 						</div>
 					</div>
@@ -472,7 +476,7 @@
 					<div class="about__descr fi-2">
 						<h3 class="section__ttl">О компании</h3>
 						<div class="about__descr-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam sunt tenetur consequatur neque? Repudiandae earum nemo veritatis facere molestias praesentium rerum sit repellat. Pariatur quia, fugit voluptatibus unde aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ducimus qui dicta, accusamus reiciendis sed numquam nostrum iure quaerat vel rerum quam, dolor explicabo nulla. Illum molestias laboriosam voluptate distinctio.
+							Мы предлагаем широкий спектр услуг в области права, оценки и экспертизы, бухгалтерского учета и налогообложения. Специалисты компании - это сплоченный коллектив профессионалов, работающих на благо клиентов. Наши консультанты помогут Вам решить самые сложные и запутанные ситуации и предложат оптимальное решение. Мы доказали свою состоятельность многолетним опытом успешной работы, а наши клиенты стали нашими добрыми друзьями и партнерами.
 						</div>
 					</div>
 					<div class="about__slider-wrp fi-2">
@@ -523,7 +527,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="about__promo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam a ea, soluta nemo voluptas ipsa natus labore non recusandae, animi accusamus veniam sit facilis amet vel, doloribus! Amet atque, autem.</div>
+				<div class="about__promo">
+					Независимая экспертиза автомобиля после ДТП проводится нашими специалистами с выездом по Москве и МО.
+					Проводим все виды независимой экспертизы авто после ДТП, любые виды оценки ущерба автомобиля после ДТП.
+				</div>
 			</div>
 		</div>
 	</section>
@@ -536,8 +543,8 @@
 						<div class="team__item-top">
 							<div class="team__item-img shd" style="background-image: url(img/team__img_1.jpg)"></div>
 							<div class="team__item-right">
-								<a href="#" class="team__item-exp" data-fancybox>10 лет опыт</a>
-								<a href="#" class="team__item-cert" data-fancybox>
+								<a href="img/team__cert-img.png" class="team__item-exp" data-fancybox>10 лет опыт</a>
+								<a href="img/team__cert-img.png" class="team__item-cert" data-fancybox>
 									<div class="team__item-cert-img"><img src="img/team__cert-img.png" alt="team__cert-img.png" /></div>
 									<div class="team__item-cert-ttl">Сертификат</div>
 								</a>
@@ -556,8 +563,8 @@
 						<div class="team__item-top">
 							<div class="team__item-img shd" style="background-image: url(img/team__img_2.jpg)"></div>
 							<div class="team__item-right">
-								<a href="#" class="team__item-exp" data-fancybox>10 лет опыт</a>
-								<a href="#" class="team__item-cert" data-fancybox>
+								<a href="img/team__cert-img.png" class="team__item-exp" data-fancybox>10 лет опыт</a>
+								<a href="img/team__cert-img.png" class="team__item-cert" data-fancybox>
 									<div class="team__item-cert-img"><img src="img/team__cert-img.png" alt="team__cert-img.png" /></div>
 									<div class="team__item-cert-ttl">Сертификат</div>
 								</a>
@@ -576,8 +583,8 @@
 						<div class="team__item-top">
 							<div class="team__item-img shd" style="background-image: url(img/team__img_3.jpg)"></div>
 							<div class="team__item-right">
-								<a href="#" class="team__item-exp" data-fancybox>10 лет опыт</a>
-								<a href="#" class="team__item-cert" data-fancybox>
+								<a href="img/team__cert-img.png" class="team__item-exp" data-fancybox>10 лет опыт</a>
+								<a href="img/team__cert-img.png" class="team__item-cert" data-fancybox>
 									<div class="team__item-cert-img"><img src="img/team__cert-img.png" alt="team__cert-img.png" /></div>
 									<div class="team__item-cert-ttl">Сертификат</div>
 								</a>
@@ -600,32 +607,7 @@
 		<div class="map__inner">
 			<div class="map__container container">
 				<h3 class="section__ttl">Статистика ДТП по регионам России</h3>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
+				<div id="vmap" style="width: 1260px; height: 660px;"></div>
 			</div>
 		</div>
 	</section>
@@ -654,16 +636,16 @@
 							</label>
 						</div>
 						<div class="calc__slider-item">
-							<label for="calc__radio_1-1" class="calc__radio-wrp">
-								<input type="radio" class="calc__radio" id="calc__radio_1-1" name="calc__damages" value="1-5">
+							<label for="calc__radio_2-1" class="calc__radio-wrp">
+								<input type="radio" class="calc__radio" id="calc__radio_2-1" name="calc__damages_2" value="1-5">
 								<div class="calc__radio-btn">1-5</div>
 							</label>
-							<label for="calc__radio_1-2" class="calc__radio-wrp">
-								<input type="radio" class="calc__radio" id="calc__radio_1-2" name="calc__damages" value="5-10">
+							<label for="calc__radio_2-2" class="calc__radio-wrp">
+								<input type="radio" class="calc__radio" id="calc__radio_2-2" name="calc__damages_2" value="5-10">
 								<div class="calc__radio-btn">5-10</div>
 							</label>
-							<label for="calc__radio_1-3" class="calc__radio-wrp">
-								<input type="radio" class="calc__radio" id="calc__radio_1-3" name="calc__damages" value="более 10">
+							<label for="calc__radio_2-3" class="calc__radio-wrp">
+								<input type="radio" class="calc__radio" id="calc__radio_2-3" name="calc__damages_2" value="более 10">
 								<div class="calc__radio-btn">более 10</div>
 							</label>
 						</div>
@@ -680,32 +662,32 @@
 				<div class="rev__slider-wrp">
 					<div class="rev__slider owl-carousel">
 						<div class="rev__slider-item shd" style="background-image: url(img/rev__item-img_1.jpg);">
-							<a href="#" class="rev__slider-item-play" data-fancybox>
+							<a href="img/rev__item-img_1.jpg" class="rev__slider-item-play" data-fancybox>
 								<img src="img/rev__play-img.png" alt="rev__play-img.png">
 							</a>
 						</div>
 						<div class="rev__slider-item shd" style="background-image: url(img/cases__img_1.jpg);">
-							<a href="#" class="rev__slider-item-play" data-fancybox>
+							<a href="img/rev__item-img_1.jpg" class="rev__slider-item-play" data-fancybox>
 								<img src="img/rev__play-img.png" alt="rev__play-img.png">
 							</a>
 						</div>
 						<div class="rev__slider-item shd" style="background-image: url(img/rev__item-img_1.jpg);">
-							<a href="#" class="rev__slider-item-play" data-fancybox>
+							<a href="img/rev__item-img_1.jpg" class="rev__slider-item-play" data-fancybox>
 								<img src="img/rev__play-img.png" alt="rev__play-img.png">
 							</a>
 						</div>
 						<div class="rev__slider-item shd" style="background-image: url(img/rev__item-img_1.jpg);">
-							<a href="#" class="rev__slider-item-play" data-fancybox>
+							<a href="img/rev__item-img_1.jpg" class="rev__slider-item-play" data-fancybox>
 								<img src="img/rev__play-img.png" alt="rev__play-img.png">
 							</a>
 						</div>
 						<div class="rev__slider-item shd" style="background-image: url(img/cases__img_1.jpg);">
-							<a href="#" class="rev__slider-item-play" data-fancybox>
+							<a href="img/rev__item-img_1.jpg" class="rev__slider-item-play" data-fancybox>
 								<img src="img/rev__play-img.png" alt="rev__play-img.png">
 							</a>
 						</div>
 						<div class="rev__slider-item shd" style="background-image: url(img/rev__item-img_1.jpg);">
-							<a href="#" class="rev__slider-item-play" data-fancybox>
+							<a href="img/rev__item-img_1.jpg" class="rev__slider-item-play" data-fancybox>
 								<img src="img/rev__play-img.png" alt="rev__play-img.png">
 							</a>
 						</div>
@@ -849,6 +831,9 @@
     src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/owl2/owl.animate.js"></script>
+	<script src="js/map/jquery.vmap.js"></script>
+	<script src="js/map/jquery.vmap.russia.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
