@@ -3192,9 +3192,9 @@ button:active{
         .popup__wrp .input__wrp input {
           color: #000;
         }
-      .popup__wrp .input__wrp input::-webkit-input-placeholder { color: 000f; }
-      .popup__wrp .input__wrp input::-ms-input-placeholder { color: 000f; }
-      .popup__wrp .input__wrp input::-ms-input-placeholder { color: 000f; }
+      .popup__wrp .input__wrp input::-webkit-input-placeholder { color: #000; }
+      .popup__wrp .input__wrp input::-ms-input-placeholder { color: #000; }
+      .popup__wrp .input__wrp input::-ms-input-placeholder { color: #000; }
       .popup__wrp .input__wrp input::placeholder { color: #000; } 
         .popup__wrp .input__wrp:before {
           background-image: url(../img/header__tel-img.png);
