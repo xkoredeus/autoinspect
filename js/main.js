@@ -45,6 +45,20 @@ $(document).ready(function(){
         loop: false,
         margin: 20,
         navText: ["<img src='img/arrow_prev.png'>", "<img src='img/arrow_next.png'>"],
+        responsive : {
+          0   : {
+              items: 1
+          },
+          380 : {
+              items: 1
+          },
+          480 : {
+              items: 2
+          },
+          768 : {
+              items: 3
+          }
+        }
   });
   //Слайдер Сертификаты
   $('.cert__slider').owlCarousel({
@@ -54,6 +68,23 @@ $(document).ready(function(){
         loop: false,
         margin: 20,
         navText: ["<img src='img/arrow_prev.png'>", "<img src='img/arrow_next.png'>"],
+        responsive : {
+          0   : {
+              items: 3
+          },
+          380 : {
+              items: 3
+          },
+          480 : {
+              items: 4
+          },
+          768 : {
+              items: 5
+          },
+          1024 : {
+              items: 6
+          }
+        }
   });
   //Карта статистики ДТП
   var data_obj = {
@@ -173,6 +204,16 @@ $(document).ready(function(){
           label.html(name  + list_obj);
           list_obj  = '';
       }
+  });
+  //Мобильное меню
+  $(".header__hamburger").on('click',function() {
+    $(this).toggleClass("active","slow");
+    $('.header__nav').toggleClass("active");
+    $('body').toggleClass("fixed");
+  });
+  //Закрываем AjaxForm popup после успешной отправки
+  $(document).on('af_complete', function(event,res) {
+    if(res.success) parent.$.fancybox.close();
   });
 
 });
