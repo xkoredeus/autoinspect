@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="js/map/jqvmap.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/media.css">
 	<!--[if lte IE 8]>
 		<script src="js/html5.js"></script>
 	<![endif]-->
@@ -43,6 +44,7 @@
 				</ul>
 			</div>		
 		</div>
+		<div class="header__hamburger"></div>
 	</header>
 	<section class="section__offer">
 		<div class="offer__container container">
@@ -363,7 +365,7 @@
 			<div class="docs__container container">
 				<h3 class="section__ttl">Какие документы от вас нужны</h3>
 				<div class="docs__cnt fr">
-					<div class="docs__item-wrp skew fi-3">
+					<div class="docs__item-wrp fi-3">
 						<div class="docs__item">
 							<div class="docs__item-img" style="background-image: url(img/docs__img_1.png)"></div>
 							<div class="docs__item-ttl">Паспорт</div>
@@ -372,7 +374,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="docs__item-wrp skew fi-3">
+					<div class="docs__item-wrp fi-3">
 						<div class="docs__item">
 							<div class="docs__item-img" style="background-image: url(img/docs__img_2.png)"></div>
 							<div class="docs__item-ttl">Документы на атвомобиль</div>
@@ -381,7 +383,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="docs__item-wrp skew fi-3">
+					<div class="docs__item-wrp fi-3">
 						<div class="docs__item">
 							<div class="docs__item-img" style="background-image: url(img/docs__img_3.png)"></div>
 							<div class="docs__item-ttl">Документы о ДТП</div>
@@ -826,7 +828,20 @@
 			</div>
 		</div>
 	</footer>
-
+	<div id="popup_call" class="popup__container" style="display:none">
+		<div  class="popup__wrp popup_call__wrp">
+			<div class="popup">
+				<h3 class="popup__ttl">Оставьте заявку</h3>
+				<div class="input__wrp input__wrp_tel">
+					<input type="tel" class="input__tel" name="popup_call__tel" placeholder="Ваш телефон">
+				</div>
+				<input type="submit" class="btn input__submit" name="popup_call__sumbit" value="Заказать">
+				<div class="popup__policy">
+					Нажимая кнопку "Отправить", вы соглашаетесь с <a href="#" class="form__policy-link">политикой конфиденциальности</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script
     src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
