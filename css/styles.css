@@ -1394,6 +1394,9 @@ button:active{
     max-width: 900px;
     margin: 0 auto;
   }
+  .docs__container {
+    padding: 30px 15px;
+  }
     .docs__container:before,
     .docs__container:after {
       position: absolute;

@@ -8,6 +8,7 @@
 	<title>Auto - Inspection</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="js/map/jqvmap.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -37,12 +38,12 @@
 				<ul class="header__nav">
 					<img src="img/main-logo.png" alt="main-logo.png" class="header__nav-logo">
 
-					<li><a href="#" class="header__nav-link">Виды экспертиз</a></li>
-					<li><a href="#" class="header__nav-link active">Этапы работы</a></li>
-					<li><a href="#" class="header__nav-link">Почему выбирают нас</a></li>
-					<li><a href="#" class="header__nav-link">О компании</a></li>
-					<li><a href="#" class="header__nav-link">Отзывы</a></li>
-					<li><a href="#" class="header__nav-link">Контакты</a></li>
+					<li><a href="#views" class="header__nav-link anchor-href">Виды экспертиз</a></li>
+					<li><a href="#stages" class="header__nav-link anchor-href">Этапы работы</a></li>
+					<li><a href="#advantages" class="header__nav-link anchor-href">Почему выбирают нас</a></li>
+					<li><a href="#about" class="header__nav-link anchor-href">О компании</a></li>
+					<li><a href="#reviews" class="header__nav-link anchor-href">Отзывы</a></li>
+					<li><a href="#feed" class="header__nav-link anchor-href">Контакты</a></li>
 
 					<a href="mailto:m1@samtu.ru" class="header__info-item header__info-item_mail">
 						m1@samtu.ru
@@ -57,12 +58,12 @@
 				</ul>
 			</div>		
 		</div>
-		<div class="header__hamburger"></div>
+		<!-- <div class="header__hamburger"></div> -->
 	</header>
 	<section class="section__offer">
 		<div class="offer__container container">
 			<img src="img/offer__img.png" alt="offer__img.png" class="offer__img">
-			<div class="offer__cnt">
+			<div class="offer__cnt" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
 				<div class="offer__ttl-wrp">
 					<h2 class="offer__ttl skew">Независимая автоэкспертиза ДТП в Москве и МО</h2>
 					<div class="offer__subttl skew">
@@ -87,7 +88,7 @@
 		</div>
 	</section>
 	<section class="events__section">
-		<div class="events__container container">
+		<div class="events__container container" data-aos="fade-up" data-aos-duration="2000">
 			<div class="events__ttl-wrp skew">
 				<h3 class="events__ttl">В каких случаях требуется независимая автоэкспертиза</h3>
 			</div>
@@ -120,32 +121,32 @@
 			</div>
 		</div>
 	</section>
-	<section class="views__section">
+	<section class="views__section" id="views">
 		<div class="views__section-inner">
-			<div class="container">
+			<div class="container" data-aos="fade-up" data-aos-duration="2300">
 				<h3 class="section__ttl">Все виды автоэкспертиз в Москве и МО</h3>
 				<div class="views__wrp">
 					<div class="views__tabs views__tabs_left">
-						<div class="views__tabs-item active" data-item="1">
+						<a href="#views__tab-cnt-item_1" class="views__tabs-item anchor-href active" data-item="1">
 							<div class="views__tabs-item-img"></div>
 							<div class="views__tabs-item-descr">Независимая автоэкспертиза (оценка ущерба после ДТП)</div>
-						</div>
-						<div class="views__tabs-item" data-item="2">
+						</a>
+						<a href="#views__tab-cnt-item_2" class="views__tabs-item anchor-href" data-item="2">
 							<div class="views__tabs-item-img"></div>
 							<div class="views__tabs-item-descr">Транспортная трасологическая экспертиза</div>
-						</div>
-						<div class="views__tabs-item" data-item="3">
+						</a>
+						<a href="#views__tab-cnt-item_3" class="views__tabs-item anchor-href" data-item="3">
 							<div class="views__tabs-item-img"></div>
 							<div class="views__tabs-item-descr">Экспертиза обстоятельств ДТП</div>
-						</div>
-						<div class="views__tabs-item" data-item="4">
+						</a>
+						<a href="#views__tab-cnt-item_4" class="views__tabs-item anchor-href" data-item="4">
 							<div class="views__tabs-item-img"></div>
 							<div class="views__tabs-item-descr">Расчет утраты товарной стоимости</div>
-						</div>
+						</a>
 					</div>
 					<div class="views__tabs-cnt">
 						<!-- Item 1 -->
-						<div class="views__tabs-cnt-item active" data-item="1">
+						<div class="views__tabs-cnt-item active" id="views__tab-cnt-item_1" data-item="1">
 							<div class="views__tabs-cnt-ttl">Экспертиза обстоятельств ДТП</div>
 							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
 							<div class="views__tabs-cnt-descr">
@@ -163,7 +164,7 @@
 						</div>
 						<!-- / Item 1 -->
 						<!-- Item 2 -->
-						<div class="views__tabs-cnt-item" data-item="2">
+						<div class="views__tabs-cnt-item" id="views__tab-cnt-item_2" data-item="2">
 							<div class="views__tabs-cnt-ttl">Транспортная трасологическая экспертиза</div>
 							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
 							<div class="views__tabs-cnt-descr">
@@ -181,7 +182,7 @@
 						</div>
 						<!-- / Item 2 -->
 						<!-- Item 3 -->
-						<div class="views__tabs-cnt-item" data-item="3">
+						<div class="views__tabs-cnt-item" id="views__tab-cnt-item_3" data-item="3">
 							<div class="views__tabs-cnt-ttl">Экспертиза обстоятельств ДТП</div>
 							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
 							<div class="views__tabs-cnt-descr">
@@ -199,7 +200,7 @@
 						</div>
 						<!-- / Item 3 -->
 						<!-- Item 4 -->
-						<div class="views__tabs-cnt-item" data-item="4">
+						<div class="views__tabs-cnt-item" id="views__tab-cnt-item_4" data-item="4">
 							<div class="views__tabs-cnt-ttl">Расчет утраты товарной стоимости</div>
 							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
 							<div class="views__tabs-cnt-descr">
@@ -217,7 +218,7 @@
 						</div>
 						<!-- / Item 4 -->
 						<!-- Item 5 -->
-						<div class="views__tabs-cnt-item" data-item="5">
+						<div class="views__tabs-cnt-item" id="views__tab-cnt-item_5" data-item="5">
 							<div class="views__tabs-cnt-ttl">Оценка рыночной стоимости автотранспорта</div>
 							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
 							<div class="views__tabs-cnt-descr">
@@ -235,7 +236,7 @@
 						</div>
 						<!-- / Item 5 -->
 						<!-- Item 6 -->
-						<div class="views__tabs-cnt-item" data-item="6">
+						<div class="views__tabs-cnt-item" id="views__tab-cnt-item_6" data-item="6">
 							<div class="views__tabs-cnt-ttl">Судебная экспертиза</div>
 							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
 							<div class="views__tabs-cnt-descr">
@@ -253,7 +254,7 @@
 						</div>
 						<!-- / Item 6 -->
 						<!-- Item 7 -->
-						<div class="views__tabs-cnt-item" data-item="7">
+						<div class="views__tabs-cnt-item" id="views__tab-cnt-item_7" data-item="7">
 							<div class="views__tabs-cnt-ttl">Судебная экспертиза</div>
 							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
 							<div class="views__tabs-cnt-descr">
@@ -271,7 +272,7 @@
 						</div>
 						<!-- / Item 7 -->
 						<!-- Item 8 -->
-						<div class="views__tabs-cnt-item" data-item="8">
+						<div class="views__tabs-cnt-item" id="views__tab-cnt-item_8" data-item="8">
 							<div class="views__tabs-cnt-ttl">Экспертиза выявленных дефектов в период гарантийного срока эксплуатации</div>
 							<img src="img/views__item-content-img.jpg" class="views__tabs-cnt-img" alt="views__item-content-img.jpg" />
 							<div class="views__tabs-cnt-descr">
@@ -290,38 +291,38 @@
 						<!-- / Item 8 -->
 					</div>
 					<div class="views__tabs views__tabs_right">
-						<div class="views__tabs-item" data-item="5">
+						<a href="#views__tab-cnt-item_5" class="views__tabs-item anchor-href" data-item="5">
 							<div class="views__tabs-item-img"></div>
 							<div class="views__tabs-item-descr">Оценка рыночной стоимости автотранспорта</div>
-						</div>
-						<div class="views__tabs-item" data-item="6">
+						</a>
+						<a href="#views__tab-cnt-item_6" class="views__tabs-item anchor-href" data-item="6">
 							<div class="views__tabs-item-img"></div>
 							<div class="views__tabs-item-descr">Судебная экспертиза</div>
-						</div>
-						<div class="views__tabs-item" data-item="7">
+						</a>
+						<a href="#views__tab-cnt-item_7" class="views__tabs-item anchor-href" data-item="7">
 							<div class="views__tabs-item-img"></div>
 							<div class="views__tabs-item-descr">Экспертиза качества проведенного ремонта</div>
-						</div>
-						<div class="views__tabs-item" data-item="8">
+						</a>
+						<a href="#views__tab-cnt-item_8" class="views__tabs-item anchor-href" data-item="8">
 							<div class="views__tabs-item-img"></div>
 							<div class="views__tabs-item-descr">Экспертиза выявленных дефектов в период гарантийного срока эксплуатации</div>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="stages">
+	<section class="stages" id="stages">
 		<div class="stages__inner">
 			<div class="stages__cnt-wrp">
-				<div class="stages__container container">
+				<div class="stages__container container" data-aos="zoom-in-left" data-aos-duration="1200">
 					<h3 class="section__ttl">Начните работу вместе с нами</h3>
 					<div class="stages__tabs tabs">
 						<ul class="tabs__list">
 							<li class="active"><span>С чего начать?</span></li>
 							<li><span>Что вы получите?</span></li>
 						</ul>
-						<div class="tabs__container">
+						<div class="tabs__container" >
 							<div class="tab-content__item stages-tabs-content__item">
 								<div class="stages__subttl">Оценка ущерба в 3 этапа</div>
 								<div class="stages__cnt">
@@ -375,7 +376,7 @@
 	</section>
 	<section class="docs">
 		<div class="docs__inner">
-			<div class="docs__container container">
+			<div class="docs__container container" data-aos="zoom-in-right" data-aos-duration="1500">
 				<h3 class="section__ttl">Какие документы от вас нужны</h3>
 				<div class="docs__cnt fr">
 					<div class="docs__item-wrp fi-3">
@@ -419,11 +420,11 @@
 			
 		</div>
 	</section>
-	<section class="advantages">
+	<section class="advantages" id="advantages">
 		<div class="adv__inner">
 			<div class="adv__container container">
-				<h3 class="section__ttl">Почему выбирают нас?</h3>
-				<div class="adv__cnt fr">
+				<h3 class="section__ttl" data-aos="fade-up" data-aos-anchor-placement="top-bottom"  data-aos-duration="1300">Почему выбирают нас?</h3>
+				<div class="adv__cnt fr"  data-aos="fade-up" data-aos-anchor-placement="top-bottom"  data-aos-duration="1300">
 					<div class="adv__item adv__item_problems fi-2">
 						<div class="adv__item-ttl">Какие проблемы возникают при оценке</div>
 						<div class="adv__item-descr-wrp skew">
@@ -456,7 +457,7 @@
 	<section class="doubt">
 		<div class="doubt__inner">
 			<div class="doubt__container container">
-				<div class="doubt__ttl-wrp">
+				<div class="doubt__ttl-wrp" data-aos="fade-up-right" data-aos-offset="0"  data-aos-duration="600">
 					<div class="doubt__ttl">
 						<span>Сомневаетесь,</span> что затраты на наши услуги окупятся?
 					</div>
@@ -464,7 +465,7 @@
 						Попробуйте бесплатно!
 					</div>
 				</div>
-				<div class="doubt__cnt">
+				<div class="doubt__cnt"  data-aos="fade-up-right" data-aos-offset="-100"  data-aos-duration="600">
 					<ul class="doubt__adv-list">
 						<li>Бесплатно изучим материалы дела</li>
 						<li>Бесплатно сделаем предварительную оценку ущерба в случае заказа полной экспертизы</li>
@@ -484,10 +485,10 @@
 			</div>
 		</div>
 	</section>
-	<section class="about">
+	<section class="about" id="about">
 		<div class="about__inner">
 			<div class="about__container container">
-				<div class="about__cnt fr">
+				<div class="about__cnt fr" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-offset="0"> 
 					<div class="about__descr fi-2">
 						<h3 class="section__ttl">О компании</h3>
 						<div class="about__descr-text">
@@ -542,18 +543,18 @@
 						</div>
 					</div>
 				</div>
-				<div class="about__promo">
+				<div class="about__promo" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="-100">
 					Независимая экспертиза автомобиля после ДТП проводится нашими специалистами с выездом по Москве и МО.
 					Проводим все виды независимой экспертизы авто после ДТП, любые виды оценки ущерба автомобиля после ДТП.
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="team">
+	<section class="team" >
 		<div class="team__inner">
 			<div class="team__container container">
-				<h3 class="section__ttl">Команда, которой можно довериться</h3>
-				<div class="team__cnt fr">
+				<h3 class="section__ttl" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">Команда, которой можно довериться</h3>
+				<div class="team__cnt fr" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
 					<div class="team__item fi-3">
 						<div class="team__item-top">
 							<div class="team__item-img shd" style="background-image: url(img/team__img_1.jpg)"></div>
@@ -621,20 +622,20 @@
 	<section class="map">
 		<div class="map__inner">
 			<div class="map__container container">
-				<h3 class="section__ttl">Статистика ДТП по регионам России</h3>
-				<div id="vmap" style="width: 1260px; height: 660px;"></div>
+				<h3 class="section__ttl" data-aos="fade-up"  data-aos-anchor-placement="top-bottom" data-aos-duration="800">Статистика ДТП по регионам России</h3>
+				<div id="vmap" data-aos="flip-left" data-aos-duration="900" data-aos-offset="-100" style="width: 1260px; height: 660px;"></div>
 			</div>
 		</div>
 	</section>
 	<section class="calc">
 		<div class="calc__inner">
 			<div class="calc__container container">
-				<h3 class="section__ttl">
+				<h3 class="section__ttl" data-aos="fade-up"  data-aos-anchor-placement="top-bottom" data-aos-duration="800" data-aos-offset="-100">
 					У вас особый случай? <br>
 					Хотите узнать точную стоимость
 				</h3>
-				<div class="calc__subttl">Определите стоимость оценки с помощью калькулятора</div>
-				<div class="calc__slider-wrp">
+				<div class="calc__subttl"  data-aos="fade-up"  data-aos-anchor-placement="top-bottom" data-aos-duration="400" data-aos-offset="-200">Определите стоимость оценки с помощью калькулятора</div>
+				<div class="calc__slider-wrp" data-aos="flip-right" data-aos-duration="900" data-aos-offset="-300">
 					<form action="[[~[[*id]]]]" method="post" class="calc__slider owl-carousel">
 						<div class="calc__slider-item">
 							<label for="calc__radio_1-1" class="calc__radio-wrp">
@@ -669,12 +670,12 @@
 			</div>
 		</div>
 	</section>
-	<section class="rev">
+	<section class="rev" id="reviews">
 		<div class="rev__inner">
 			<div class="rev__container container">
-				<h3 class="section__ttl">Отзывы о нас</h3>
-				<div class="rev__subttl">С 2003 года мы помогли более чем 6 695 клиентам получить справедливые выплаты. Все наши клиенты благодарны нам за помощь в трудной ситуации.</div>
-				<div class="rev__slider-wrp">
+				<h3 class="section__ttl" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">Отзывы о нас</h3>
+				<div class="rev__subttl" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">С 2003 года мы помогли более чем 6 695 клиентам получить справедливые выплаты. Все наши клиенты благодарны нам за помощь в трудной ситуации.</div>
+				<div class="rev__slider-wrp" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
 					<div class="rev__slider owl-carousel">
 						<div class="rev__slider-item shd" style="background-image: url(img/rev__item-img_1.jpg);">
 							<a href="img/rev__item-img_1.jpg" class="rev__slider-item-play" data-fancybox>
@@ -714,8 +715,8 @@
 	<div class="cert">
 		<div class="cert__inner">
 			<div class="cert__container container">
-				<h3 class="section__ttl">Сертификаты и лицензии</h3>
-				<div class="cert__slider-wrp">
+				<h3 class="section__ttl" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">Сертификаты и лицензии</h3>
+				<div class="cert__slider-wrp" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
 					<div class="cert__slider owl-carousel">
 						<div class="cert__slider-item shd" style="background-image: url(img/cert__item-img_1.jpg);">
 							<a href="img/cert__item-img_2.jpg" class="cert__slider-item-play" data-fancybox>
@@ -772,11 +773,11 @@
 			</div>
 		</div>
 	</div>
-	<section class="feed">
+	<section class="feed" id="feed">
 		<div class="feed__inner">
 			<div class="feed__container container">
-				<h3 class="section__ttl">Получите бесплатную консультацию эксперта</h3>
-				<div class="feed__cont-wrp">
+				<h3 class="section__ttl" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">Получите бесплатную консультацию эксперта</h3>
+				<div class="feed__cont-wrp" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
 					<a href="mailto:m1@samtu.ru" class="feed__cont-item feed__cont-item_mail">
 						m1@samtu.ru
 					</a>
@@ -788,7 +789,7 @@
 						<a href="tel:78007077025">8 (800) 707-70-25</a>
 					</div>
 				</div>
-				<form action="[[~[[*id]]]]" method="post" class="feed__form">
+				<form action="[[~[[*id]]]]" method="post" class="feed__form" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
 					<div class="input__wrp input__wrp_name">
 						<input type="tel" class="input__name" name="feed__name" placeholder="Имя">
 					</div>
@@ -800,7 +801,7 @@
 					</div>
 					<input type="submit" class="btn input__submit" name="feed__submit" value="Записаться сейчас">
 				</form>
-				<div class="feed__map-cont-wrp">
+				<div class="feed__map-cont-wrp"  data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
 					<div class="feed__map-cont">
 						<div class="feed__map-ttl">Наши контакты</div>
 						<div class="feed__map-item feed__map-item_geo">109544, г. Москва, ул. Новорогожская, д. 30, 1 этаж, оф. 9</div>
@@ -814,7 +815,7 @@
 		</div>
 	</section>
 	<footer class="footer">
-		<div class="footer__container container">
+		<div class="footer__container container" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
 			<a href="#" class="footer__logo">
 				<img src="img/main-logo.png" alt="main-logo.png">
 			</a>
@@ -862,6 +863,7 @@
     <script src="js/owl2/owl.animate.js"></script>
 	<script src="js/map/jquery.vmap.js"></script>
 	<script src="js/map/jquery.vmap.russia.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

@@ -6,6 +6,12 @@ $(document).ready(function(){
     $('.views__tabs-cnt-item[data-item="'+$(this).attr('data-item')+'"]').addClass('active');
     $(this).addClass('active');
   });
+  //AOS Animate
+  AOS.init({
+   once: true,
+   mirror: true,
+   disable: 'phone'
+  });
   //Tabs
   $(document).ready(function () {
   $(".tab-content__item").hide();
@@ -85,6 +91,12 @@ $(document).ready(function(){
               items: 6
           }
         }
+  });
+  //Плавная прокрутка
+  $("body").on('click', 'a.anchor-href[href*="#"]', function(e){
+    var fixed_offset = 30;
+    $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+    e.preventDefault();
   });
   //Карта статистики ДТП
   var data_obj = {
